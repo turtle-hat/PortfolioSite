@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scratch Remix Tree Viewer</title>
+
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link id="treeDisplayStyle" rel="stylesheet" href="styles/tree-horizontal.css">
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <div id="throbber">
+        <img src="media/throbber.gif" alt="">
+        <div id="throbberMessages">
+            <p id="loadingMessage" class="log"></p>
+            <p id="progressInfo" class="log"></p>
+        </div>
+    </div>
+
+    <div id="interface">
+        <div id="logo"></div>
+
+        <div class="widgets">
+            <!-- Project Number -->
+            <span class="tooltip">
+                The ID of the project to search for remixes of.<br>
+                (You can also paste in a project's URL directly!)
+            </span>
+            <label for="projectSearch">Project ID:</label>
+            <input id="projectSearch" type="text" size="16" autofocus value="">
+            <span id="projectName" class="log"></span>
+            <br>
+        </div>
+
+        <div class="widgets">
+            <!-- Number of Projects to Limit To -->
+            <span class="tooltip">
+                How many direct remixes of each project to show.<br>
+                (Larger values will result in longer loading times.)
+            </span>
+            <label for="limit">
+                Remixes Per Project:
+            </label>
+            <select id="limit">
+                <option value="1">1</option>
+                <option value="3">3</option>
+                <option value="5">5</option>
+                <option value="10">10</option>
+                <option value="20">20</option>
+                <option value="40" selected>40</option>
+                <option value="all">All</option>
+            </select>
+            <br>
+        </div>
+
+        <div class="widgets">
+            <!-- Whether to Find Root Project Instead -->
+            <span class="tooltip">
+                If checked, the tree will also show ancestors and distant siblings of the selected project.
+            </span>
+            <label for="getRoot">
+                Find Original?
+            </label>
+            <input id="getRoot" type="checkbox">
+            <br>
+        </div>
+
+        <div class="widgets">
+            <!-- Direction to Build Tree In -->
+            <span class="tooltip">
+                The direction remixes will sprout off from their parent project. <br>
+                (Can be changed even after tree has loaded!)
+            </span>
+            <label for="direction">
+                Orientation:
+            </label>
+            <select id="direction">
+                <option value="styles/tree-horizontal.css" selected>Horizontal</option>
+                <option value="styles/tree-vertical.css">Vertical</option>
+                <option value="styles/tree-horizontal-r.css">Horizontal (Inverted)</option>
+                <option value="styles/tree-vertical-r.css">Vertical (Inverted)</option>
+            </select>
+        </div>
+
+        <div class="widgets search">
+            <button type="button" id="search">Get Remixes!</button>
+        </div>
+    </div>
+
+    <main>
+        <div id="remixTree">
+            <h1 id="starterText">Paste a Scratch project's URL into the "Project ID" box to browse a diagram showing all of its remixes!</h1>
+        </div>
+        <div id="commandLog" class="log"></div>
+    </main>
+
+    <footer>
+        <h1>&copy;2022 turtlehat</h1>
+        <p>Made for <cite>IGME-235: Intro to Game Web Technology</cite> at the Rochester Institute of Technology using the Scratch API.</p>
+        <p>The <cite>Scratch Remix Tree Visualizer</cite> is neither affiliated with nor a product of Scratch, the Scratch Foundation, the Massachusetts Institute of Technology (MIT), the MIT Media Lab, the Lifelong Kindergarten Group, or any bodies with ownership of the <a href="https://scratch.mit.edu" target="_blank">Scratch website</a>.</p>
+        <h2><a href="about.html">You can view documentation for the site here.</a></h2>
+    </footer>
+</body>
+
+</html>

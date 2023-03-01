@@ -1,0 +1,38 @@
+Ivan Pope
+Web maelstrom
+
+Ivan Pope, seasoned Net expert, debunks a few myths about the Internet.
+(12 words)
+
+The Net is changing rapidly. Give it a year and it may be almost unrecognisable — and that's no bad thing, says <strong>Ivan Pope.</strong>
+(23 words)
+
+"The August 15 snapshot of the commercial domains registered with InterNIC shows 18,403 unique commercial domains compared with 17,002 as of July 15 1994. The net increase of 1,401 represents an 8.2% month to month increase."
+(36 words)
+
+"For the first seven months of 1993 there were 206,849 unique addresses in MIT's Usenet address lists. That means growth in posters is about 360%."
+(25 words)
+
+INTERNET SOCIETY GRAPHS http://www.ucs.ed.ac.uk/~ercm20/Isoc-GIFs
+
+The Internet is many things to many people, depending on how you access it and what you want out of it. Seasoned netters tend to feel that they know the Net intimately, that they have a finger on the pulse and that nothing moves here without their knowledge. It's an illusion, of course - none of us can get a measure on this particular beast. We may feel movement across the open, rolling plains, see storms gathering in the distance and hear the thunder, our thats about as far as it goes. Rumours are passed our way that this tool will solve that problem, that someone has done a 'really bad thing,' against all accepted protocols, that there'll be a lynching and that the final apocalypse is imminent...
+Rumours of the death of the Internet are somewnat exaggerated though. To old-timers, mired in RFC and Usenet, commercialisation certainly will spell the end of their Wild West era — that's if fancy graphical interfaces and America On Line immigrants don't bring it down first. Time is spent exchanging and comparing charts: how much bandwidth the Web uses; how many untutored users AOL has
+(192 words)
+unleashed; how everyone in the world will be on the Internet by the year 2001. Millenarian fever sweeps through the newsgroups. Strange signs are seen in the
+(27 words)
+archives. Commerce spells evil, although how exactly is not specified.
+There has been an amazing flowering of commercial invention on the Internet, and it's been gathering pace since the middle of the year, driven by the immediacy of the World Wide Web. Although it's now hard to remember, this time last year there was <em>no</em> World Wide Web, no shopping malls and no on-line sales pitches. It may be unpalatable to many users, but a Web founded on no more than amateur enthusiasm and spare time commitment will never rise to the dizzy heights being mapped for
+(97 words)
+(316 words)
+
+
+
+Net statistics
+You can follow the endless upward growth of the internet at NSFnet's statistics site. The URL for this is http://www.cc.gatech.edu/gvu/stats/NSF/merit.html
+(20 words)
+
+Internet byte count meets graphical representation of Chaos theory.
+(9 words)
+
+Seasoned <strong>netters</strong> tend to feel that they know the Net <strong>intimately</strong>, that they have a <strong>finger</strong> on the <strong>pulse</strong> and that nothing moves here without their <strong>knowledge</strong>. It's an <strong>illusion</strong>, of course.
+(32 words)

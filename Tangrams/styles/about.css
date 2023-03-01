@@ -1,0 +1,40 @@
+body {
+    background-color: white;
+    font-size: 20px;
+}
+
+a:link {
+    color: brown;
+}
+
+a:visited {
+    color: darkred;
+}
+
+a:focus,
+a:hover {
+    color: blue;
+}
+
+a:active {
+    color: cyan;
+}
+
+.images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90vw;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.images img {
+    width: 50%;
+    min-width: 375px;
+}
+
+p {
+    margin: 1em 5vw;
+    text-align: justify;
+}

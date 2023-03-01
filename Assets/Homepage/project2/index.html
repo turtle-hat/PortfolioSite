@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scratch Remix Tree Viewer</title>
+
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <div class="widgets">
+        <!-- Project Number -->
+        <input id="projectSearch" type="number" size="20" maxlength="20" min="1" autofocus value="">
+        <input id="limit" type="number" size="2" maxlength="2" min="1" max="40" value="">
+        <input id="offset" type="number" size="20" maxlength="20" min="0" value="">
+    </div>
+    <div class="widgets">
+        <button type="button" id="search">Get Remixes</button>
+    </div>
+
+    <div id="apidump"></div>
+    <div id="remixes"></div>
+</body>
+
+</html>

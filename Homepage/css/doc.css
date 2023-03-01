@@ -1,0 +1,17 @@
+body {
+    background-color: snow;
+    margin: 2rem;
+}
+
+#pagetop {
+    margin: -2rem;
+}
+
+h1, h2, h3 {
+    margin: 1em 0;
+}
+
+img {
+    width: 100%;
+    max-width: 50rem;
+}

@@ -1,0 +1,433 @@
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Kanit:wght@400;500&display=swap');
+
+:root {
+    /* COLOR PALETTE */
+    --palette-background-light: #fff;
+    --palette-background-dark: rgb(47, 115, 204);
+    --palette-dark: #222;
+    --palette-highlight: #e0581a;
+    --palette-highlight-dark: rgb(154, 102, 255);
+    --palette-highlight-darker: rgb(74, 49, 198);
+    --palette-highlight-light: rgb(79, 154, 229);
+
+    font-family: Kanit, sans-serif;
+}
+
+
+
+/* LINK STYLES */
+
+a:link {
+    color: var(--palette-highlight-light);
+}
+
+a:visited {
+    color: var(--palette-highlight-darker);
+}
+
+a:focus,
+a:hover {
+    color: var(--palette-highlight-dark);
+}
+
+a:active {
+    color: var(--palette-highlight);
+}
+
+body {
+    font-size: medium;
+    background-color: var(--palette-dark);
+}
+
+main {
+    /* Gradients generated with GIMP */
+    background-image: linear-gradient(to top, rgb(162, 130, 255) 0%, rgb(179, 188,
+                255) 27%, rgb(219, 209, 251) 63%, rgb(239, 217, 248) 81%, rgb(255, 211,
+                233) 100%);
+    background-image: -moz-linear-gradient(center top, rgb(162, 130, 255) 0%,
+            rgb(179, 188, 255) 27%, rgb(219, 209, 251) 63%, rgb(239, 217, 248) 81%, rgb(255,
+                211, 233) 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom,
+            color-stop(0.000, rgb(162, 130, 255)), color-stop(0.274, rgb(179, 188, 255)),
+            color-stop(0.633, rgb(219, 209, 251)), color-stop(0.814, rgb(239, 217, 248)),
+            color-stop(1.000, rgb(255, 211, 233)));
+    background-repeat: repeat-x;
+    /* width: min-content;
+    min-width: 100vw; */
+    overflow-x: scroll;
+    overflow-y: hidden;
+    height: max-content;
+}
+
+footer {
+    background-color: var(--palette-highlight-darker);
+    color: var(--palette-highlight-dark);
+    min-height: 20vh;
+}
+
+footer h1 {
+    font-size: 1.25rem;
+    font-family: "Handlee", Noteworthy, sans-serif;
+}
+
+footer h1 {
+    padding: 1em 0.5em 0;
+}
+
+footer h2 {
+    padding: 1em 0.5em 3em;
+}
+
+footer p {
+    padding: 0.5em;
+}
+
+footer cite {
+    font-style: oblique;
+}
+
+footer a:link {
+    color: var(--palette-highlight-light);
+}
+
+footer a:visited {
+    color: var(--palette-background-dark);
+}
+
+footer a:focus,
+footer a:hover {
+    color: var(--palette-background-light);
+}
+
+footer a:active {
+    color: var(--palette-highlight);
+}
+
+/* USER FEEDBACK */
+
+.log {
+    font-family: monospace;
+    font-size: 1rem;
+    background-color: var(--palette-dark);
+    color: var(--palette-background-light);
+}
+
+.log strong {
+    font-weight: bold;
+}
+
+#throbber {
+    visibility: hidden;
+    z-index: 10;
+    pointer-events:none;
+}
+
+#throbber img {
+    visibility: inherit;
+    z-index: 10;
+    position: fixed;
+    top: calc(50vh - 32px);
+    left: calc(50vw - 32px);
+}
+
+#throbberMessages {
+    visibility: inherit;
+    z-index: 10;
+    text-align: center;
+    position: fixed;
+    top: calc(50vh + 32px + 1em);
+    width: 50vw;
+    padding: 0.5em;
+    margin-left: 25vw;
+}
+
+#interface {
+    background-color: var(--palette-highlight);
+    color: var(--palette-background-light);
+    display: grid;
+    z-index: 5;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    width: 100vw;
+    height: 10vh;
+    min-height: 9em;
+    /* position: fixed;
+    top: 0;
+    left: 0; */
+}
+
+#logo {
+    background-image: url(../media/LogoDesktop.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    grid-row: 1 / span 2;
+    width: 100%;
+    height: 100%;
+    margin-right: auto;
+    margin: auto auto auto 1em;
+}
+
+/* INTERFACE STYLES */
+
+#interface .widgets {
+    position: relative;
+    margin-top: 0.5em;
+}
+
+#interface label {
+    font-size: 1.1rem;
+    display: block;
+    padding-bottom: 0.25em;
+}
+
+#search {
+    font-family: "Handlee", Noteworthy, sans-serif;
+    color: var(--palette-background-light);
+    background-color: var(--palette-highlight-dark);
+    border: 5px solid var(--palette-highlight-darker);
+    border-radius: 10px;
+
+    font-size: 1.75rem;
+    padding: 0.55em;
+    margin-top: 0.75em;
+}
+
+.widgets.search {
+    grid-area: 1 / 4 / span 2 / span 1;
+}
+
+#search:hover,
+#search:focus {
+    background-color: var(--palette-background-dark);
+    border-color: var(--palette-background-light);
+    /* color: var(--palette-highlight-light); */
+    outline: none;
+}
+
+#search:active {
+    background-color: var(--palette-background-light);
+    color: var(--palette-background-dark);
+    border-color: var(--palette-background-dark);
+}
+
+/* Tooltip method learned from https://www.w3schools.com/css/css_tooltip.asp */
+.widgets .tooltip {
+    visibility: hidden;
+    background-color: var(--palette-highlight-darker);
+    position: absolute;
+    top: 120%;
+    left: -1em;
+    width: 100%;
+    max-width: 20vw;
+    padding: 1em;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.widgets:hover .tooltip {
+    visibility: visible;
+}
+
+#interface input,
+#interface select {
+    border: 2px inset var(--palette-highlight);
+    border-radius: 5px;
+    font-family: Kanit, sans-serif;
+    font-size: 1em;
+}
+
+#interface input[type="checkbox"] {
+    outline: 2px inset var(--palette-highlight);
+}
+
+#interface input:focus,
+#interface select:focus {
+    border-color: var(--palette-background-dark);
+    outline: 2px inset var(--palette-background-dark);
+}
+
+#interface input[type="checkbox"]:focus {
+    outline-color: var(--palette-background-dark);
+    outline-style: inset;
+    outline-width: 4px;
+}
+
+#interface input:hover,
+#interface select:hover,
+#interface input[type="checkbox"]:hover,
+#interface input:focus,
+#interface select:focus {
+    color: var(--palette-background-light);
+    background-color: var(--palette-highlight-light);
+}
+
+
+
+#starterText {
+    color: var(--palette-highlight-darker);
+    font-family: "Handlee", Noteworthy, sans-serif;
+    font-size: 2rem;
+    position: absolute;
+    top: 9rem;
+    left: 0;
+    width: 60vw;
+    padding: 1em;
+}
+
+/* REMIX TREE STYLES */
+
+/* Extra space insertion modified from https://stackoverflow.com/questions/41584709 */
+/* #remixTree::before {
+    display: block;
+    content: "";
+    height: 10vh;
+    min-height: 8em;
+} */
+
+#main {
+    height: max-content;
+}
+
+#remixTree {
+    width: min-content;
+    height: max-content;
+    min-height: 60vh;
+    padding: 5rem 5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tree.project {
+    position: relative;
+    width: 100px;
+    height: 75px;
+    border: 3px solid var(--palette-dark);
+}
+
+
+.tree.projectData {
+    background-color: var(--palette-background-light);
+    visibility: hidden;
+    z-index: 1;
+    text-align: left;
+    position: absolute;
+    left: -55%;
+    top: -110%;
+    width: max-content;
+    padding: 3px;
+    border: 3px solid var(--palette-dark);
+}
+
+.tree.project:focus .tree.projectData,
+.tree.project:hover .tree.projectData,
+.tree.projectData:focus,
+.tree.projectData:hover {
+    visibility: visible;
+}
+
+.tree.projectData>* {
+    margin: 3px;
+}
+
+.tree.thumbnailBig {
+    width: 200px;
+}
+
+.tree.title {
+    width: 100%;
+}
+
+.tree.author {
+    height: max-content;
+    margin: 0px;
+}
+
+.tree.author img {
+    float: left;
+    height: 50px;
+    margin: 3px;
+    margin-bottom: 0;
+}
+
+.tree.stats {
+    float: right;
+    width: 100%;
+}
+
+.tree.stats>* {
+    white-space: nowrap;
+    margin: 0 3px;
+}
+
+/* Icon insertion technique obtained from https://stackoverflow.com/questions/41584709 */
+.tree.statViews::before,
+.tree.statLoves::before,
+.tree.statFavorites::before,
+.tree.statRemixes::before {
+    display: inline-block;
+    position: relative;
+    top: 0.25em;
+}
+
+.tree.statViews::before {
+    content: url("https://scratch.mit.edu/svgs/project/views-gray.svg");
+}
+
+.tree.statLoves::before {
+    content: url("https://scratch.mit.edu/svgs/project/love-red.svg");
+}
+
+.tree.statFavorites::before {
+    content: url("https://scratch.mit.edu/svgs/project/fav-yellow.svg");
+}
+
+.tree.statRemixes::before {
+    content: url("https://scratch.mit.edu/svgs/project/remix-gray.svg");
+}
+
+.tree.remixes {
+    position: relative;
+    border: 3px solid var(--palette-dark);
+    display: flex;
+}
+
+.tree.remixes:empty {
+    border: none;
+    padding: 0;
+}
+
+@media screen and (max-width: 50rem) {
+    #interface {
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #logo {
+        background-image: url(../media/LogoMobile.png);
+        grid-area: 1 / 1 / span 1 / 4;
+    }
+
+    .widgets.search {
+        grid-column-start: 3;
+    }
+
+    .widgets {
+        padding-left: 0.25em;
+        text-align: center;
+    }
+
+    .widgets .tooltip {
+        left: 1em;
+    }
+}
+
+@media screen and (min-width: 77.5rem) {
+    #interface label {
+        font-size: 1.5rem;
+        display: inline;
+    }
+
+    #interface .widgets {
+        padding-top: 1rem;
+    }
+}

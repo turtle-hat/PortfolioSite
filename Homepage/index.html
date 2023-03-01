@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Owen Gebhardt - Portfolio</title>
+
+    <link rel="shortcut icon" href="media/favicon.ico">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/mainpage.css">
+</head>
+
+<body>
+    <header id="pagehead">
+        <a id="pagetop" href="doc.html"><strong>DOCUMENTATION</strong> Want to see how I made this?</a>
+        <div id="headline">
+            <div class="left side"></div>
+            <div class="center">
+                <img class="profile" src="media/profile-500px.jpg" alt="Owen Gebhardt">
+                <h1>Owen Gebhardt</h1>
+            </div>
+            <div class="right side"></div>
+        </div>
+        <h3 class="blurb">Hi! Welcome to my portfolio. Here you can find a few of my most recent big projects, along
+            with some commentary on each piece.</h3>
+        <ul id="navigation">
+            <li><a href="#TangramsGame"><p>Tangrams Game</p></a></li>
+            <li><a href="#SiteProject"><p>This Site</p></a></li>
+            <li><a href="#SpecBuild"><p>Spec Build</p></a></li>
+            <li><a href="#RemixVisualizer"><p>Remix Visualizer</p></a></li>
+            <li><a href="#ArrowAce"><p>Arrow Ace</p></a></li>
+            <li><a href="doc.html"><p>Site Docs</p></a></li>
+        </ul>
+    </header>
+    <!-- DEPRECATED CODE FOR BACK TO TOP BUTTON -->
+    <!-- <a id="backtotop" href="#"><button>Back to Top</button></a> -->
+    <main>
+        <section class="piece" id="TangramsGame">
+            <header>
+                <!-- Throughout the section classes are used instead of IDs because I plan to make this page's format
+                    extendable so multiple similarly-styled sections can be used. -->
+                <h2>Ten Grams of<br>Tangrams</h2>
+                <div class="blurb">
+                    <h3>A game I programmed with the WebGL engine PIXI.</h3>
+                </div>
+            </header>
+            <div class="textarea">
+                <div class="imagecorner">
+                    <div class="images">
+                        <img class="large" src="media/siteThin.jpg" alt="Colorful graph">
+                        <div class="small">
+                            <img class="upper" src="media/siteMedium.jpg" alt="Log byte count by service">
+                            <img class="lower" src="media/siteWide.jpg"
+                                alt="Blocky colorful information model">
+                        </div>
+                    </div>
+                    <p class="caption">Screenshots of the site at different screen sizes.</p>
+                </div>
+                <div class="text">
+                    <p>
+                        This site is the culmination of everything I've learned so far in my Intro to Game Web
+                        Technology course. I figure the site itself is worth mentioning as an example of something I've
+                        made.
+                    </p>
+                    <p>
+                        The site changes responsively to fit different screen sizes. If the text in each section would become too squeezed by the images, the images are allowed to stretch over the whole width of the content box. Next, if the sidebars (and aside elements in those sidebars) would become too squeezed, the content box expands to fill most of the screen width, and asides are moved into the main flow of the content under their respective sections.
+                    </p>
+                </div>
+            </div>
+            <div class="sidebar">
+                <aside>
+                    <h2>Images</h2>
+                    <p>The blocks of images here are each made with a grid containing a large image and a flexbox—that
+                        flexbox in turn contains two smaller images. There's also a paragraph element for the caption,
+                        and finally everything's wrapped in a div and floated to the side.</p>
+                </aside>
+            </div>
+        </section>
+        <section class="piece" id="SiteProject">
+            <header>
+                <!-- Throughout the section classes are used instead of IDs because I plan to make this page's format
+                    extendable so multiple similarly-styled sections can be used. -->
+                <h2>This<br>site</h2>
+                <div class="blurb">
+                    <h3>Yes, the <strong>website</strong> you're looking at now! I coded this all myself with HTML and
+                        CSS.</h3>
+                </div>
+            </header>
+            <div class="textarea">
+                <div class="imagecorner">
+                    <div class="images">
+                        <img class="large" src="media/siteThin.jpg" alt="Colorful graph">
+                        <div class="small">
+                            <img class="upper" src="media/siteMedium.jpg" alt="Log byte count by service">
+                            <img class="lower" src="media/siteWide.jpg"
+                                alt="Blocky colorful information model">
+                        </div>
+                    </div>
+                    <p class="caption">Screenshots of the site at different screen sizes.</p>
+                </div>
+                <div class="text">
+                    <p>
+                        This site is the culmination of everything I've learned so far in my Intro to Game Web
+                        Technology course. I figure the site itself is worth mentioning as an example of something I've
+                        made.
+                    </p>
+                    <p>
+                        The site changes responsively to fit different screen sizes. If the text in each section would become too squeezed by the images, the images are allowed to stretch over the whole width of the content box. Next, if the sidebars (and aside elements in those sidebars) would become too squeezed, the content box expands to fill most of the screen width, and asides are moved into the main flow of the content under their respective sections.
+                    </p>
+                </div>
+            </div>
+            <div class="sidebar">
+                <aside>
+                    <h2>Images</h2>
+                    <p>The blocks of images here are each made with a grid containing a large image and a flexbox—that
+                        flexbox in turn contains two smaller images. There's also a paragraph element for the caption,
+                        and finally everything's wrapped in a div and floated to the side.</p>
+                </aside>
+            </div>
+        </section>
+        <section class="piece flip" id="ArrowAce">
+            <header>
+                <h2>Arrow<br>Ace</h2>
+                <h3 class="blurb">A <strong>shoot-em-up game</strong> I made for my Unity class.</h3>
+                <a class="demo" href="https://igme-202-2221.github.io/project-1-turtle-hat/">Click here to play it!</a>
+            </header>
+            <div class="textarea">
+                <div class="imagecorner">
+                    <div class="images">
+                        <img class="large" src="media/arrowace1.jpg" alt="Player firing an enemy's projectile">
+                        <div class="small">
+                            <img src="media/arrowace2.jpg" alt="The Player fighting many ships">
+                            <img src="media/arrowace3.jpg" alt="The game over screen">
+                        </div>
+                    </div>
+                    <p class="caption">Screenshots from the game. Note the player's projectile (green) has been stolen
+                        from an enemy projectile (gold).</p>
+                </div>
+                <p>
+                    This is a project I made in my Interactive Media Development class, in which we learn how to use the
+                    video game engine Unity.
+                </p>
+                <p>
+                    This took me around a month to program. I also made all the art assets myself (with the exception of
+                    the fonts). The game has a number of notable features that weren't required, like the ship having
+                    acceleration and slowdown times and objects having multiple hitboxes for detecting different
+                    gameplay conditions.
+                </p>
+                <p>
+                    Here's a blurb about what the gameplay is like:
+                </p>
+                <blockquote class="excerpt">
+                    <p>
+                        In <strong>Arrow Ace</strong>, you play an ace pilot/archer who wields a versatile
+                        <strong>bow</strong> that can shoot many kinds of
+                        projectiles. If you get an enemy's projectile to hits the direct <strong>center</strong> of your
+                        plane, you <strong>grab</strong> it
+                        instead of letting it deal damage. The next time you fire a projectile, you'll launch that
+                        <strong>stolen projectile
+                        </strong> instead of a normal arrow.
+                    </p>
+                </blockquote>
+                <p>
+                    There are two types of enemies: One type waits until you pass in front of it before charging at you,
+                    and the other type fires spear projectiles at you. Health is handled with a health bar that depletes
+                    when you get hit. Scoring is based on enemy hits and kills, and the amount of points each individual
+                    enemy gives out can be doubled (sometimes multiple times) by hitting it in the fuselage or with a
+                    special projectile.
+                </p>
+                <p>
+                    There's currently a bug where the UI is too small and the Game Over overlay shows up at all times
+                    and in the wrong place on the screen, but this is an issue with the build of the game; in the Unity
+                    editor this problem doesn't occur.
+                </p>
+            </div>
+            <div class="sidebar">
+                <aside>
+                    <h2><em>Arrow Ace</em> Controls</h2>
+                    <ul>
+                        <li>Move Up - W</li>
+                        <li>Move Down - S</li>
+                        <li>Move Left - A</li>
+                        <li>Move Right - D</li>
+                        <li><br>Shoot Left - J</li>
+                        <li>Shoot Right - L</li>
+                    </ul>
+                </aside>
+            </div>
+        </section>
+        <section class="piece" id="SpecBuild">
+            <header>
+                <h2>Spec<br>Build</h2>
+                <div class="blurb">
+                    <h3>The <strong>first phase</strong> of this website, and the source of the design used on the page.
+                    </h3>
+                </div>
+            </header>
+            <div class="textarea">
+                <div class="imagecorner">
+                    <div class="images comparison">
+                        <img class="large" src="media/spec.jpg" alt="Copied HTML and CSS design">
+                        <div class="small">
+                            <img class="upper" src="media/original.jpg" alt="Original print design">
+                        </div>
+                    </div>
+                    <p class="caption">On the left is my recreation of the page, and on the right you can see what the
+                        original looked like. Similar, no?</p>
+                </div>
+                <div class="text">
+                    <p>
+                        The first phase of the development of this site was actually copying another layout from a print
+                        source into electronic HTML and CSS.
+                    </p>
+                    <p>
+                        The original source was the first page of an article by web developer Ivan Pope. It featured
+                        multiple different styles of text, a grid-based layout, and a three-column structure for the
+                        article's text, and overlapping images of multiple sizes. I thought it would be a fun but
+                        not-too-difficult layout to try and copy. It sure was fun, but boy was it harder than I thought!
+                    </p>
+                    <p>
+                        This layout doesn't feature any responsiveness, since it was made at a fixed width to get the
+                        proportions as close to the source as possible.
+                    </p>
+                    <p>
+                        You can view my recreation of the page <a href="spec.html">here.</a>
+                    </p>
+                </div>
+            </div>
+            <div class="sidebar">
+                <aside>
+                    <h2>Font hunt</h2>
+                    <p>One of the more unexpectedly difficult parts of this part of the project was finding fonts that
+                        were similar to the ones in the original source. For instance, I found the font Gill Sans was
+                        used for most of the non-paragraph text, but since that font needs to be paid for I ended up
+                        using the free lookalike webfont Cabin instead.</p>
+                </aside>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div id="pagemarker">
+            <p class="box">&copy;</p>
+            <p class="label"> <strong>2022</strong> Owen Gebhardt</p>
+        </div>
+    </footer>
+</body>
+
+</html>
