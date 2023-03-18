@@ -489,7 +489,7 @@ a#pagetop:active {
 .excerpt p {
     font-family: Cabin, sans-serif;
     font-size: 18px;
-    border-bottom: 15px solid var(--palette-dark);
+    border-bottom: 10px solid var(--palette-dark);
     box-sizing: border-box;
     width: 100%;
     height: auto;
