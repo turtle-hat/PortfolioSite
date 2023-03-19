@@ -6,13 +6,13 @@
 
 /* COLOR PALETTE */
 :root {
-    --palette-background-light: snow;
-    --palette-background-dark: #edd;
-    --palette-dark: #222;
-    --palette-highlight: firebrick;
-    --palette-highlight-dark: darkred;
-    --palette-highlight-light: coral;
-    --palette-special: #1d6ca5;
+    --pal-background-light: snow;
+    --pal-background-dark: #edd;
+    --pal-dark: #222;
+    --pal-highlight: firebrick;
+    --pal-highlight-dark: darkred;
+    --pal-highlight-light: coral;
+    --pal-special: #1d6ca5;
 }
 
 
@@ -21,14 +21,14 @@
 /* GENERAL STYLES */
 
 body {
-    background-color: var(--palette-background-light);
-    color: var(--palette-dark);
+    background-color: var(--pal-background-light);
+    color: var(--pal-dark);
     font-family: Inter, sans-serif;
     font-size: 18px;
 }
 
 footer {
-    background-color: var(--palette-background-dark);
+    background-color: var(--pal-background-dark);
 }
 
 
@@ -64,16 +64,16 @@ p {
 
 /* INLINE STYLES */
 a:link {
-    color: var(--palette-highlight);
+    color: var(--pal-highlight);
 }
 
 a:visited {
-    color: var(--palette-highlight-dark);
+    color: var(--pal-highlight-dark);
 }
 
 a:focus,
 a:hover {
-    color: var(--palette-highlight-light);
+    color: var(--pal-highlight-light);
 }
 
 a:focus {
@@ -90,7 +90,7 @@ a:focus:hover {
 }
 
 a:active {
-    color: var(--palette-special);
+    color: var(--pal-special);
     outline: none;
 }
 
@@ -112,27 +112,27 @@ em {
 #pagetop {
     font-family: Cabin, sans-serif;
     line-height: normal;
-    color: var(--palette-dark);
+    color: var(--pal-dark);
     height: min-content;
     margin-top: 2rem;
-    border-left: 6rem solid var(--palette-dark);
+    border-left: 6rem solid var(--pal-dark);
     padding-left: 1em;
 }
 
 a#pagetop:link,
 a#pagetop:visited {
-    color: var(--palette-dark);
+    color: var(--pal-dark);
 }
 
 a#pagetop:focus,
 a#pagetop:hover {
-    color: var(--palette-highlight-light);
-    border-color: var(--palette-highlight-light);
+    color: var(--pal-highlight-light);
+    border-color: var(--pal-highlight-light);
 }
 
 a#pagetop:active {
-    color: var(--palette-special);
-    border-color: var(--palette-special);
+    color: var(--pal-special);
+    border-color: var(--pal-special);
 }
 
 #pagetop p strong {
@@ -152,7 +152,7 @@ a#pagetop:active {
     padding: 2px;
     padding-bottom: 3rem;
     width: 100%;
-    color: var(--palette-background-light);
+    color: var(--pal-background-light);
     background-color: #222;
 }
 
@@ -169,8 +169,8 @@ a#pagetop:active {
 }
 
 /* DEPRECATED CODE FOR BACK TO TOP BUTTON */
-/* 
-#backtotop {
+
+/* #backtotop {
     text-align: center;
     float: right;
     position: sticky;
@@ -192,7 +192,7 @@ a#pagetop:active {
 
 /* HEADING GRID */
 #pagehead {
-    background-color: var(--palette-background-light);
+    background-color: var(--pal-background-light);
     display: grid;
     width: 100vw;
     grid-template-rows: repeat(5, min-content);
@@ -215,8 +215,8 @@ a#pagetop:active {
 
 /* HEADLINE */
 #headline {
-    /* border-top: 0.5rem solid var(--palette-dark);
-    border-bottom: 0.5rem solid var(--palette-dark); */
+    /* border-top: 0.5rem solid var(--pal-dark);
+    border-bottom: 0.5rem solid var(--pal-dark); */
     display: flex;
     flex: auto;
     justify-content: center;
@@ -245,12 +245,12 @@ a#pagetop:active {
 }
 
 #headline .right {
-    background-image: linear-gradient(90deg, var(--palette-background-light), var(--palette-dark));
+    background-image: linear-gradient(90deg, var(--pal-background-light), var(--pal-dark));
     margin-left: 2rem;
 }
 
 #headline .left {
-    background-image: linear-gradient(270deg, var(--palette-background-light), var(--palette-dark));
+    background-image: linear-gradient(270deg, var(--pal-background-light), var(--pal-dark));
     margin-right: 2rem;
 }
 
@@ -260,7 +260,7 @@ a#pagetop:active {
 
 /* NAVIGATION */
 #navigation {
-    background-color: var(--palette-highlight-dark);
+    background-color: var(--pal-highlight-dark);
     text-align: center;
     display: flex;
     flex-wrap: nowrap;
@@ -268,7 +268,7 @@ a#pagetop:active {
     height: min-content;
     justify-content: center;
     box-sizing: border-box;
-    border: 0.5rem solid var(--palette-dark);
+    border: 0.5rem solid var(--pal-dark);
     border-left: none;
     border-right: none;
 }
@@ -284,17 +284,17 @@ a#pagetop:active {
 }
 
 #navigation a p {
-    background-color: var(--palette-highlight);
+    background-color: var(--pal-highlight);
     font-size: 2.5rem;
     height: 100%;
     padding: 0 0.5rem;
-    border-left: 0.25rem solid var(--palette-dark);
-    border-right: 0.25rem solid var(--palette-dark);
+    border-left: 0.25rem solid var(--pal-dark);
+    border-right: 0.25rem solid var(--pal-dark);
 }
 
 #navigation a:link p,
 #navigation a:visited p {
-    color: var(--palette-background-light);
+    color: var(--pal-background-light);
     text-decoration: none;
 }
 
@@ -307,8 +307,8 @@ a#pagetop:active {
 #navigation a:hover p {
     /* font-family: 'Cabin', 'Gill Sans', sans-serif;
     font-weight: bold; */
-    background-color: var(--palette-highlight-light);
-    outline: 0.5rem solid var(--palette-background-light);
+    background-color: var(--pal-highlight-light);
+    outline: 0.5rem solid var(--pal-background-light);
 }
 
 #navigation a:focus {
@@ -320,7 +320,7 @@ a#pagetop:active {
 }
 
 #navigation a:active p {
-    background-color: var(--palette-special);
+    background-color: var(--pal-special);
 }
 
 
@@ -331,7 +331,7 @@ a#pagetop:active {
 
 /* GRID LAYOUT */
 .piece {
-    background-color: var(--palette-background-dark);
+    background-color: var(--pal-background-dark);
     display: grid;
     grid-template-rows: repeat(3, max-content);
     grid-template-columns: 1fr 60vw 1fr;
@@ -362,7 +362,7 @@ a#pagetop:active {
 /* MAIN COLUMN */
 .piece header,
 .piece .textarea {
-    background-color: var(--palette-background-light);
+    background-color: var(--pal-background-light);
     padding: 0 2rem;
 }
 
@@ -442,7 +442,7 @@ a#pagetop:active {
 
 .images img {
     box-sizing: border-box;
-    border: 0.5rem solid var(--palette-dark);
+    border: 0.5rem solid var(--pal-dark);
 }
 
 .images .large {
@@ -489,7 +489,7 @@ a#pagetop:active {
 .excerpt p {
     font-family: Cabin, sans-serif;
     font-size: 18px;
-    border-bottom: 10px solid var(--palette-dark);
+    border-bottom: 10px solid var(--pal-dark);
     box-sizing: border-box;
     width: 100%;
     height: auto;
@@ -504,7 +504,7 @@ a#pagetop:active {
 /* SIDEBAR */
 .sidebar {
     position: relative;
-    color: var(--palette-special);
+    color: var(--pal-special);
     font-family: Lato, sans-serif;
     line-height: 1.2em;
     margin: 0 1rem;
@@ -540,7 +540,7 @@ a#pagetop:active {
 
 @media screen and (max-width: 55rem) {
     body {
-        background-color: var(--palette-background-dark);
+        background-color: var(--pal-background-dark);
     }
 
     #headline {
@@ -616,7 +616,7 @@ a#pagetop:active {
     }
 
     .sidebar {
-        color: var(--palette-special);
+        color: var(--pal-special);
         font-family: Lato, sans-serif;
         line-height: 1.2em;
         margin: 2rem;
@@ -647,7 +647,7 @@ a#pagetop:active {
         padding-right: 0.5rem;
         padding-bottom: 0px;
         line-height: normal;
-        color: var(--palette-background-light);
+        color: var(--pal-background-light);
         background-color: #222;
     }
 
