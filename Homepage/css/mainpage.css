@@ -195,7 +195,7 @@ a#pagetop:active {
     background-color: var(--pal-background-light);
     display: grid;
     width: 100vw;
-    grid-template-rows: repeat(5, min-content);
+    grid-template-rows: repeat(3, min-content);
     grid-template-columns: 1fr;
 }
 
@@ -204,11 +204,11 @@ a#pagetop:active {
 }
 
 #headline {
-    grid-area: 2 / 1 / span 1 / span 1;
+    grid-area: 1 / 1 / span 1 / span 1;
 }
 
 #navigation {
-    grid-area: 4 / 1 / span 1 / span 1;
+    grid-area: 3 / 1 / span 1 / span 1;
 }
 
 
@@ -538,7 +538,7 @@ a#pagetop:active {
     }
 }
 
-@media screen and (max-width: 55rem) {
+@media screen and (max-width: 55rem), (orientation: portrait) {
     body {
         background-color: var(--pal-background-dark);
     }
