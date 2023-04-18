@@ -102,6 +102,10 @@ em {
     font-style: italic;
 }
 
+code {
+    overflow: hidden;
+}
+
 
 
 
@@ -292,6 +296,10 @@ a#pagetop:active {
     border-right: 0.25rem solid var(--pal-dark);
 }
 
+#navigation a.navspecial p {
+    background-color: var(--pal-special);
+}
+
 #navigation a:link p,
 #navigation a:visited p {
     color: var(--pal-background-light);
@@ -395,7 +403,7 @@ a#pagetop:active {
     text-indent: -5rem;
 }
 
-.piece header .demo {
+.demo {
     font-family: 'Cabin', sans-serif;
     display: block;
     text-align: center;
@@ -508,18 +516,20 @@ a#pagetop:active {
     font-family: Lato, sans-serif;
     line-height: 1.2em;
     margin: 0 1rem;
+    font-size: 16px;
     text-align: right;
-}
-
-.flip .sidebar {
-    text-align: left;
+    margin-bottom: 2em;
 }
 
 .sidebar aside {
     position: absolute;
     bottom: 0;
     right: 0;
-    width: 70%;
+    width: 85%;
+}
+
+.flip .sidebar {
+    text-align: left;
 }
 
 .flip .sidebar aside {
@@ -530,7 +540,52 @@ a#pagetop:active {
 .sidebar aside h2 {
     font-size: 150%;
     font-weight: bold;
+    margin-bottom: 0.5rem;
 }
+
+.sidebar p {
+    margin-bottom: 1rem;
+}
+
+.sidebar ul {
+    width: 100%;
+}
+
+.sidebar li {
+    width: 100%;
+    line-height: 1.5em;
+}
+
+.sidebar ul.codelist li {
+    text-align: left;
+    text-indent: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.sidebar ul.codelist li::before {
+    content: "•";
+    margin-right: 0.5rem;
+}
+
+.sidebar code {
+    width: 100%;
+    background-color: var(--pal-dark);
+    color: var(--pal-background-light);
+    font-family: monospace;
+    padding: 0.2rem;
+}
+
+.sidebar code.long {
+    overflow: scroll;
+    display: inline-block;
+}
+
+.sidebar code p {
+    width: max-content;
+    margin: 0;
+}
+
+
 
 @media screen and (max-width: 70rem) {
     .imagecorner {
