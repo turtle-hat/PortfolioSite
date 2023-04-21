@@ -24,7 +24,7 @@ body {
     background-color: var(--pal-background-light);
     color: var(--pal-dark);
     font-family: Inter, sans-serif;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 footer {
@@ -38,18 +38,19 @@ footer {
 h1 {
     font-family: 'Cabin Condensed', sans-serif;
     text-transform: uppercase;
-    font-size: 90px;
+    font-size: 5.5em;
 }
 
 h2 {
     font-family: 'Cabin Condensed', sans-serif;
-    font-size: 65px;
+    font-size: 4em;
     line-height: 0.75em;
 }
 
 h3 {
     font-family: Lato, sans-serif;
     font-style: italic;
+    font-size: 1.25em;
     line-height: 1.6em;
 }
 
@@ -58,7 +59,6 @@ img {
 }
 
 p {
-    font-size: 16px;
     line-height: 1.5em;
 }
 
@@ -151,7 +151,7 @@ a#pagetop:active {
 
 #pagemarker .box {
     font-family: 'Cabin Condensed', sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.5em;
     text-align: center;
     padding: 2px;
     padding-bottom: 3rem;
@@ -289,7 +289,7 @@ a#pagetop:active {
 
 #navigation a p {
     background-color: var(--pal-highlight);
-    font-size: 2.5rem;
+    font-size: 2.5em;
     height: 100%;
     padding: 0 0.5rem;
     border-left: 0.25rem solid var(--pal-dark);
@@ -406,6 +406,7 @@ a#pagetop:active {
 .demo {
     font-family: 'Cabin', sans-serif;
     display: block;
+    clear: both;
     text-align: center;
     font-size: 2rem;
     margin: auto;
@@ -461,6 +462,7 @@ a#pagetop:active {
 }
 
 .imagecorner .caption {
+    font-size: 1.2em;
     font-family: Cabin, sans-serif;
     font-weight: bold;
 }
@@ -508,7 +510,7 @@ a#pagetop:active {
 
 .excerpt p {
     font-family: Cabin, sans-serif;
-    font-size: 18px;
+    font-size: 1.2em;
     border-bottom: 10px solid var(--pal-dark);
     box-sizing: border-box;
     width: 100%;
@@ -528,7 +530,6 @@ a#pagetop:active {
     font-family: Lato, sans-serif;
     line-height: 1.2em;
     margin: 0 1rem;
-    font-size: 16px;
     text-align: right;
     margin-bottom: 2em;
 }
@@ -550,8 +551,9 @@ a#pagetop:active {
 }
 
 .sidebar aside h2 {
-    font-size: 150%;
+    font-size: 1.5rem;
     font-weight: bold;
+    line-height: 1.5rem;
     margin-bottom: 0.5rem;
 }
 
@@ -595,19 +597,25 @@ a#pagetop:active {
 .sidebar code p {
     width: max-content;
     margin: 0;
+    font-size: 1em;
 }
 
 
 
-@media screen and (max-width: 70rem) {
+@media screen and (max-width: 75em) {
     .imagecorner {
         width: 100%;
     }
 }
 
-@media screen and (max-width: 55rem), (orientation: portrait) {
+@media screen and (max-width: 65em),
+screen and (orientation: portrait) {
     body {
         background-color: var(--pal-background-dark);
+    }
+
+    h3 {
+        font-size: 2em;
     }
 
     #headline {
@@ -623,7 +631,7 @@ a#pagetop:active {
     }
 
     #headline .center h1 {
-        font-size: 10vw;
+        font-size: 9vw;
         width: 70vw;
     }
     
@@ -645,11 +653,15 @@ a#pagetop:active {
     }
 
     #navigation a p {
-        font-size: 3vw;
+        font-size: 3.5vw;
     }
 
     .imagecorner {
         width: 100%;
+    }
+
+    .imagecorner .caption {
+        font-size: 1.5rem;
     }
 
     .piece {
