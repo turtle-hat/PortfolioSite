@@ -11,247 +11,29 @@
 </head>
 
 <body>
-    <header id="pagehead">
-        <div id="headline">
-            <div class="left side"></div>
-            <div class="center">
-                <img class="profile" src="media/profile.jpg" alt="Owen Gebhardt">
-                <h1>Owen Gebhardt</h1>
-            </div>
-            <div class="right side"></div>
-        </div>
-        <h3 class="blurb">Hi! Welcome to my portfolio. Here you can find many of my most recent big projects, along
-            with some commentary on each piece.</h3>
-        <h3></h3>
-        <ul id="navigation">
-            <li><a href="#TangramsGame"><p>Tangrams Game</p></a></li>
-            <li><a href="#SiteProject"><p>This Site</p></a></li>
-            <li><a href="#RemixVisualizer"><p>Remix Visualizer</p></a></li>
-            <li><a href="#SpecBuild"><p>Spec Build</p></a></li>
-            <li><a href="#LiveWire"><p>Live Wire</p></a></li>
-            <li><a href="#ArrowAce"><p>Arrow Ace</p></a></li>
-            <li><a href="doc.html" class="navspecial"><p>Site Docs</p></a></li>
-        </ul>
-    </header>
-    <!-- DEPRECATED CODE FOR BACK TO TOP BUTTON -->
-    <!-- <a id="backtotop" href="#"><button>Back to Top</button></a> -->
     <main>
-        <!-- Throughout the page, classes are used for CSS formatting to make the layout extendable. -->
-        <section class="piece" id="TangramsGame">
-            <header>
-                <h2>Ten Grams of<br>Tangrams</h2>
-                <div class="blurb">
-                    <h3>A game I programmed with the WebGL engine PixiJS.</h3>
-                </div>
+        <div id="maingrid">
+            <header id="pagehead">
+                <h1>Owen Gebhardt</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium amet explicabo maxime error, culpa
+                    enim tempore vero suscipit repellat obcaecati! Ut corporis expedita pariatur provident libero neque non
+                    velit nemo corrupti iste commodi, numquam tempore, necessitatibus soluta voluptas, ipsa dolorem
+                    aspernatur vitae tempora accusamus ab. Suscipit, dolor eum repellat, sunt ipsum dicta et molestias
+                    facere possimus accusantium ullam fugit? Eligendi doloribus officiis error, inventore, commodi aut
+                    suscipit dignissimos impedit eaque nisi asperiores omnis molestias quasi officia! Totam minus
+                    consectetur ab beatae distinctio voluptate officia praesentium debitis laboriosam minima id molestias
+                    deserunt, similique asperiores, sapiente deleniti consequuntur sequi. Repellendus dicta ipsa, saepe sint
+                    asperiores tenetur dolorum nemo obcaecati quisquam eaque eius natus beatae, cumque, dolorem error
+                    placeat repudiandae laboriosam voluptate exercitationem? Pariatur, dicta adipisci ullam modi id, hic,
+                    sint et ipsa quis rerum quam est? A harum culpa labore omnis dicta. Facere, quia natus rem cupiditate
+                    quam alias ducimus neque amet sunt! Architecto itaque veniam numquam consequatur! Praesentium, porro
+                    sint, quas veritatis maxime in exercitationem unde dolores impedit debitis voluptatibus itaque aperiam,
+                    quod molestiae expedita cumque. Unde esse, consectetur numquam alias possimus rem repellat repudiandae
+                    nemo minus voluptate magni delectus deleniti impedit nostrum. Asperiores ad a unde recusandae repellat
+                    eum! Eligendi.</p>
             </header>
-            <div class="textarea">
-                <div class="imagecorner">
-                    <div class="images">
-                        <img class="large" src="media/tangrams1.jpg" alt="Empty board with instructions and pieces">
-                        <div class="small">
-                            <img class="upper" src="media/tangrams2.jpg" alt="A partially solved board">
-                            <img class="lower" src="media/tangrams3.jpg" alt="A solved board (with UI)">
-                        </div>
-                    </div>
-                    <p class="caption">A standard round of gameplay from start to finish.</p>
-                </div>
-                <div class="text">
-                    <p>For the final project in my Intro to Game Web Technology course during Fall 2022, I needed to design and program a video game to run in a web browser. As a kid, I used to play with a set of plastic puzzle pieces called tangrams, which includes a number of specific triangles and quadrilaterals. I brainstormed off from that idea and decided on a design for a puzzle game that tasks the player with fitting a set of angular pieces snugly into a board, much like a jigsaw puzzle.</p>
-                    <a class="demo" href="/org7993/235/project3" target="_blank">Click here to play it!</a>
-                    <p><br>Each puzzle is created by procedurally dividing a full board into a random set of pieces, which are assigned a random color and scattered on the left to hide their original positions. Each piece is stored as a list of positions representing the filled triangles they’re made of, which is cross-referenced against a grid of occupied and unoccupied triangles in the board whenever one is placed.</p>
-                    <p>I hope to continue development on this game in the future. Due to the way triangle directionality is processed, pieces can currently only be placed on tiles that allow the diagonal lines across each square to match up. I’d like to remove this restriction to make gameplay more intuitive and allow greater creativity. Additionally, playtesting revealed that the piece sizes need to be more constrained: puzzles often contain tiny triangles that can fit anywhere and large pieces that can only fit in one place, both of which are uninteresting to deal with. Finally, I’d like to improve the graphics and color choices, since they’re currently unpolished and functional “programmer art.”</p>
-                </div>
-            </div>
-            <div class="sidebar">
-                <aside>
-                    <h2>Robust Functions</h2>
-                    <p>Because each puzzle is randomly generated and often has multiple valid solutions, I wanted to handle the board interactions using an extendable and versatile set of functions. To this end, I started development by building many different functions to create pieces and boards and check the interactions between them. This bank of helper functions allows the experience I sought to create to be possible, but it also helped make the frontend interactions easier for me to keep track of and develop, and will continue to do so in the future. You can try some out for yourself by copying and pasting these in your browser’s JavaScript console:</p>
-                    <ul class="codelist">
-                        <code class="long"><p>createPiece(gridToList(buildGrid(5, 4, 0, 1)), 0, 0);</p></code>
-                        <li>Creates a new piece that fills the whole 5x4 board</li>
-                        <code class="long"><p>boardSquares = { rows : 6, columns : 5}; newGame();</p></code>
-                        <li>Sets the board’s size to be 6x5 instead of 5x4</li>
-                    </ul>
-                </aside>
-            </div>
-        </section>
-        <section class="piece flip" id="SiteProject">
-            <header>
-                <h2>This<br>site!</h2>
-                <div class="blurb">
-                    <h3>Yes, the <strong>website</strong> you're looking at now! I coded this all myself with HTML and CSS.</h3>
-                </div>
-            </header>
-            <div class="textarea">
-                <div class="imagecorner">
-                    <div class="images">
-                        <img class="large" src="media/siteThin.jpg" alt="Site at narrow width">
-                        <div class="small">
-                            <img class="upper" src="media/siteMedium.jpg" alt="Another picture of the site at narrow width, showing more of the HTML used">
-                            <img class="lower" src="media/siteWide.jpg" alt="A recursive image of this part of the site">
-                        </div>
-                    </div>
-                    <p class="caption">Screenshots of the site at different screen sizes.</p>
-                </div>
-                <div class="text">
-                    <p>This site was originally made as a project for my Intro to Game Web Technology course in Fall 2022. I figure the site itself is worth mentioning as an example of something I've made.</p>
-                    <p>The site changes responsively to fit different screen sizes. If the text in each section would become too squeezed by the images, the images are allowed to stretch over the whole width of the content box. Next, if the sidebars (and aside elements in those sidebars) would become too squeezed, the content box expands to fill most of the screen width, and asides are moved into the main flow of the content under their respective sections.</p>
-                </div>
-            </div>
-            <div class="sidebar">
-                <aside>
-                    <h2>Images</h2>
-                    <p>The blocks of images here are each made with a grid containing a large image and a flexbox—that flexbox in turn contains two smaller images. There's also a paragraph element for the caption, and finally everything's wrapped in a div and floated to the side.</p>
-                </aside>
-            </div>
-        </section>
-        <section class="piece" id="RemixVisualizer">
-            <header>
-                <h2>Remix<br>Visualizer</h2>
-                <div class="blurb">
-                    <h3>A <strong>web app</strong> to visualize relationships between projects on Scratch.</h3>
-                </div>
-            </header>
-            <div class="textarea">
-                <div class="imagecorner">
-                    <div class="images">
-                        <img class="large" src="media/remixvisualizer1.jpg" alt="Fullscreen photo showing a tree generated by the Visualizer">
-                        <div class="small">
-                            <img class="upper" src="media/remixvisualizer2.jpg" alt="Controls for tweaking the tree">
-                            <img class="lower" src="media/remixvisualizer3.jpg" alt="Closeup on one project's stats">
-                        </div>
-                    </div>
-                    <p class="caption">The site’s full interface, and detail on individual interface elements.</p>
-                </div>
-                <div class="text">
-                    <p>MIT’s Scratch website, and the visual coding language used to create the projects shared there, was my first introduction to the practice of programming 12 years ago. It’s very important to me, and I still use it today to share short games and animations with my friends from high school. When I was given an assignment to build a browser application that interfaces with the API of another website, I decided to use the Scratch API to create a site that would be useful to me and my friends.</p>
-                    <p>One of Scratch’s primary features is the ability to view the code of projects written by others, and create a derivative project called a “remix” by modifying any project’s code and assets. In the previous official version of the Scratch website, Scratch 2.0, each project could be viewed in a “remix tree,” which visualized the connections between projects and their remixes in a phylogenetic tree–like diagram. This feature has become deprecated on the official site, and the visualization breaks down if looking at a long enough chain of remixes. I sought to recreate this feature using the skills I learned about the DOM and JavaScript in a way that would remain effective with large numbers of projects.</p>
-                    <a class="demo" href="/org7993/235/project2/" target="_blank">Click here to use the site!</a>
-                    <p><br>The site builds the tree out of recursively wrapped div elements. Each container div contains another div, which stores the thumbnail and other info, and a flexbox, which stores all the containers for that project’s remixes. Using a flexbox allows the orientation of the tree to be changed at any time just by loading a different style sheet.</p>
-                    <p>Finally, I polished it with some QOL features to make the app easier to use. Rolling over a project will show its title, creator, and interaction statistics. I also included a few options for how the tree will be loaded, and the user can tell the site to find the root project (if there is one) or to only load a certain number of remixes per project.</p>
-                    <p>There’s a few ways I would like to improve this site in the future. I originally wanted to let the user scroll through remixes of the same parent project if there were too many, which would help make the full-scale tree easier to navigate, but I didn’t have time to implement it. I’d also like to condense how the rollover information is displayed, since it tends to cover up adjacent projects. Scratch also has a feature for embedding a project within a page, and I think it’d be convenient if you could play projects right within the site.</p>
-                </div>
-            </div>
-            <div class="sidebar">
-                <aside>
-                    <h2>Example Projects</h2>
-                    <p>Here are some projects you can use to generate typical trees with the program. Play with the settings and see how they look!</p>
-                    <ul class="codelist">
-                        <li><code>292371957</code> - A project my brother made as an homage to platformer games on Scratch</li>
-                        <li><code>255565</code> - A sample project that was bundled with version 1.4 of Scratch</li>
-                        <li><code>13968095</code> - A project I made in 2013 to celebrate 4,000,000 projects on Scratch</li>
-                        <li><code>209978732</code> - An ongoing challenge between me and my friends to remix a single project as many times as possible. Beware of copious amounts of in-jokes, nonsense, and loud noises! ;)</li>
-                    </ul>
-                </aside>
-            </div>
-        </section>
-        <section class="piece flip" id="SpecBuild">
-            <header>
-                <h2>Spec<br>Build</h2>
-                <div class="blurb">
-                    <h3>The <strong>starting point</strong> for the design of this page.</h3>
-                </div>
-            </header>
-            <div class="textarea">
-                <div class="imagecorner">
-                    <div class="images comparison">
-                        <img class="large" src="media/spec.jpg" alt="Copied HTML and CSS design">
-                        <div class="small">
-                            <img class="upper" src="media/original.jpg" alt="Original print design">
-                        </div>
-                    </div>
-                    <p class="caption">On the left is the original page, and on the right is my recreation.</p>
-                </div>
-                <div class="text">
-                    <p>For the first phase of this project's development, which started in my web design class, I was tasked with taking an existing print layout and replicating it digitally with HTML and CSS.</p>
-                    <p>The original source was the first page of an article by web developer Ivan Pope. It featured multiple different styles of text, a grid-based layout, and a three-column structure for the article's text, and overlapping images of multiple sizes. I thought it would be a fun but not-too-difficult layout to try and copy. It sure was fun, but boy was it harder than I thought!</p>
-                    <p>This layout doesn't feature any responsiveness, since it was made at a fixed width to get the proportions as close to the source as possible.</p>
-                    <p>You can view my recreation of the page <a href="spec.html" target="_blank">here.</a></p>
-                </div>
-            </div>
-            <div class="sidebar">
-                <aside>
-                    <h2>Font hunt</h2>
-                    <p>One of the more unexpectedly difficult parts of this part of the project was finding fonts that were similar to the ones in the original source. For instance, I found the font Gill Sans was used for most of the non-copy text, but I found out it needed a paid license to use. I ended up using the similar webfont Cabin instead, since it was free on Google Fonts.</p>
-                </aside>
-            </div>
-        </section>
-        <section class="piece" id="LiveWire">
-            <header>
-                <h2>Live<br>Wire</h2>
-                <div class="blurb">
-                    <h3>A <strong>puzzle-platformer</strong> I helped make in MonoGame on a team of five.</h3>
-                </div>
-            </header>
-            <div class="textarea">
-                <div class="imagecorner">
-                    <div class="images nooverlap">
-                        <img class="large" src="media/livewire1.jpeg" alt="The text file the level is stored as, with an array for normal tiles and a series of comma-separated lists for interactive tiles.">
-                        <div class="small">
-                            <img class="lower" src="media/livewire2.jpeg" alt="One level in the game.">
-                        </div>
-                    </div>
-                    <p class="caption">One level in the game, and its plaintext representation.</p>
-                </div>
-                <div class="text">
-                    <p>I helped build this game with four other teammates—Phillip Brown, Matthew Fallon, Alex Petty, and Sam Ruggiero—for our Game Development and Algorithmic Problem Solving II course. The game is a 2D puzzle-platformer game built using the C# library MonoGame, and the goal is to reach a flag in each level by moving, jumping, and activating doors and platforms. As you move around the level, a taut wire trails behind you, which gets caught on solid platforms in the level. This wire was intended to be limited in length, adding an element of spatial awareness and navigation to the gameplay. Due to development time constraints, that feature had to be cut, but the wire simulation remains as an aesthetic detail.</p>
-                    <p>While I didn’t program the more complex systems seen in this project, like the wire code and player movement, it was a valuable experience of working on a team for me. I was primarily in charge of implementing puzzle elements that the player could interact with and use to solve puzzles. In the final build, this ended up as just doors controlled by buttons, though we planned to add more complex components if we had the time. Since these components would need to communicate with the character controller and level loading systems written by my teammates, this gave me some practice with interpreting others’ code and figuring out how to interface with them as intended. I also did a lot of our team’s bookkeeping work, ensuring our design document was up-to-date and describing the interplay of all our different systems through text and diagrams, which also helped me understand some the project’s various systems.</p>
-                    <p>This project also taught me the importance of clear communication about how everyone is implementing their code. During the preproduction phase, we decided on the broad details of how each system would work, but left the exact details of which data structures they would use, and what functions they would implement and use, unspecified. We left it to each individual team member to specialize in their own areas of code, but without everyone clearly documenting their plans for interfacing between these systems, the code was difficult to understand at times. Additionally, while three of our team’s members worked fairly close together on the physics and levels, I and one other teammate felt left out of the loop, and we weren’t included in coding sessions as often. This left us often confused about how our teammates wanted stuff to be done. We did get a functional game out of the project, so we got there in the end, but I would prefer to have made more detailed preproduction specifications and better written communication if I were to make it again.</p>
-                </div>
-            </div>
-            <div class="sidebar">
-                <aside>
-                    <h2>What the Numbers Mean</h2>
-                    <p>Each level’s text file is interpreted in a predictable pattern. The first line contains four numbers representing the level’s height and width in tiles, and the number of pixels wide and tall each tile should be, respectively. The program then reads in a number of lines, specified by the level’s height, as an array of tiles, where each character represents a different type of tile. After that block of tiles is a number specifying the number of interactive tiles in the level, which each have their data stored on a single line. The first value in each line always represents the type of interactive tile, and the next two comma-separated values represent its row and column, but different types of tiles interpret following values differently due to necessary differences in the data they store. For instance, Door Controllers (listed as PlugDoorController) start by reading in an index for a color tint, and future values represent the Door tiles they control, interpreted as indices in the list of such tiles in the level file.</p>
-                </aside>
-            </div>
-        </section>
-        <section class="piece flip" id="ArrowAce">
-            <header>
-                <h2>Arrow<br>Ace</h2>
-                <h3 class="blurb">A <strong>shoot-em-up game</strong> I made for my Unity class.</h3>
-                <a class="demo" href="https://igme-202-2221.github.io/project-1-turtle-hat/" target="_blank">Click here to play it!</a>
-            </header>
-            <div class="textarea">
-                <div class="imagecorner">
-                    <div class="images">
-                        <img class="large" src="media/arrowace1.jpg" alt="Player firing an enemy's projectile">
-                        <div class="small">
-                            <img src="media/arrowace2.jpg" alt="The player fighting many ships">
-                            <img src="media/arrowace3.jpg" alt="The game over screen">
-                        </div>
-                    </div>
-                    <p class="caption">Screenshots from the game. Note the player's projectile (green) has been stolen from an enemy projectile (gold).</p>
-                </div>
-                <p>This is a project I made in my Interactive Media Development class, in which we learn how to use the video game engine Unity.</p>
-                <blockquote class="excerpt">
-                    <p>In <strong>Arrow Ace</strong>, you play an ace pilot/archer who wields a versatile <strong>bow</strong> that can shoot many kinds of projectiles. If you get an enemy's projectile to hits the <strong>direct center</strong> of your plane, you <strong>grab</strong> it instead of letting it deal damage. The next time you hit the fire button, you'll launch that <strong>stolen projectile</strong> instead of a normal arrow.</p>
-                </blockquote>
-                <p>This took me around a month to program. I also made all the art assets myself (with the exception of the fonts). I added a number of notable features that weren't required, like the ship having acceleration and slowdown times and objects having multiple hitboxes for detecting different gameplay conditions.</p>
-                <p>There are two types of enemies: One type waits until you pass in front of it before charging at you, and the other type fires spear projectiles at you. Health is handled with a health bar that depletes when you get hit. Scoring is based on enemy hits and kills, and the amount of points each individual enemy gives out can be doubled (sometimes multiple times) by hitting it in the fuselage or with a special projectile.</p>
-                <p>There's currently a bug where the UI is too small and the Game Over overlay shows up at all times and in the wrong place on the screen, but this is an issue with the build of the game; in the Unity editor this problem doesn't occur.</p>
-            </div>
-            <div class="sidebar">
-                <aside>
-                    <h2><em>Arrow Ace</em> Controls</h2>
-                    <ul>
-                        <li>Move Up - W</li>
-                        <li>Move Down - S</li>
-                        <li>Move Left - A</li>
-                        <li>Move Right - D</li>
-                        <li>Shoot Left - J</li>
-                        <li>Shoot Right - L</li>
-                    </ul>
-                </aside>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <div id="pagemarker">
-            <p class="box">&copy;</p>
-            <p class="label"> <strong>2022</strong> Owen Gebhardt</p>
         </div>
-    </footer>
+    </main>
 </body>
 
 </html>
