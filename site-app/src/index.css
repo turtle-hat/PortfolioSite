@@ -13,10 +13,6 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-h1 {
-  font-size: 3.2em;
-}
-
 /* Dark mode support */
 /* @media (prefers-color-scheme: light) {
   :root {

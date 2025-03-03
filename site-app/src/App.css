@@ -1,3 +1,55 @@
-#root {
+:root {
+  --bulma-primary-h: 234deg;
+  --bulma-primary-s: 76%;
+  --bulma-primary-l: 47%;
+}
+
+html {
+  background-color: gray;
+}
+
+body {
+  margin: 0px;
   text-align: center;
+}
+
+header {
+  display: flex;
+  place-items: center;
+  
+  margin: 0px;
+  height: max-content;
+}
+
+#site-header {
+  text-align: left;
+
+  margin: 100px 100px 10px 100px;
+
+  color: #ffffff;
+}
+
+#site-header .title {
+  margin: 0px;
+  border-bottom: 2px #ffffff solid;
+  
+  font-size: 5em;
+  font-weight: 300;
+  color: #ffffff;
+}
+
+#site-header .subtitle {
+  margin: 0px;
+
+  font-size: 2em;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+@media (max-width: 850px) {
+  #site-header {
+    text-align: center;
+    
+    margin: 100px auto 10px auto;
+  }
 }

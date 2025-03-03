@@ -4,11 +4,24 @@ import './App.css'
 function App() {
   return (
     <>
+      <header className='has-background-primary'>
+        <section className="hero" id="site-header">
+          <div className="hero-body">
+            <p className="title">Owen Gebhardt</p>
+            <p className="subtitle">Meticulous developer of projects you can feel</p>
+          </div>
+        </section>
+      </header>
+      
       <nav>
-        <a>blah</a>
-        <a>blah</a>
+        <a></a>
       </nav>
-      <h1>Owen Gebhardt</h1>
+
+      <main>
+        <div className="hero">
+          <p>blah</p>
+        </div>
+      </main>
     </>
   )
 }
