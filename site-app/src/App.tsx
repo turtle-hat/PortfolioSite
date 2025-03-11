@@ -8,19 +8,19 @@ function App() {
         <section className="hero" id="site-header">
           <div className="hero-body">
             <p className="title">Owen Gebhardt</p>
-            <p className="subtitle">Meticulous developer of projects you can feel</p>
+            <p className="subtitle">Meticulous developer always ready for a new challenge</p>
           </div>
         </section>
       </header>
       
       <nav>
-        <a></a>
+        <a href="">Blah 1</a>
+        <a href="">Blah 2</a>
+        <a href="">Blah 3</a>
       </nav>
 
       <main>
-        <div className="hero">
-          <p>blah</p>
-        </div>
+        
       </main>
     </>
   )
