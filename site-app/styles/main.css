@@ -1,20 +1,29 @@
 html {
   font-family: sans-serif;
 
-  /* Dark mode support */
-  background-color: #ffffff;
-
-  /* color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424; */
-
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  --bulma-primary-h: 234deg;
-  --bulma-primary-s: 76%;
-  --bulma-primary-l: 47%;
+  --background-light:         #fff;
+  --background-dark:          #333;
+  --text-light:               #111;
+  --text-dark:                #fff;
+  --accent-home:              hsl(235, 76%, 45%);
+  --accent-home-dark:         hsl(235, 84%, 30%);
+  --accent-programming:       hsl(185, 76%, 30%);
+  --accent-programming-dark:  hsl(185, 84%, 15%);
+  --accent-gis:               hsl(115, 76%, 30%);
+  --accent-gis-dark:          hsl(115, 84%, 15%);
+  --accent-visual:            hsl(310, 76%, 30%);
+  --accent-visual-dark:       hsl(310, 84%, 15%);
+
+  /* Dark mode support */
+  background-color: var(--background-light);
+
+  /* color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424; */
 }
 
 /* Dark mode support */
@@ -36,61 +45,108 @@ body {
   text-align: center;
 }
 
-.hero {
+#site-nav {
   display: flex;
-  place-items: center;
-  
-  margin: 0px;
-  height: max-content;
+  justify-content: center;
+  flex-wrap: wrap;
 
-  background-color: hsl(234deg, 76%, 47%);
+  background-color: #fff;
 }
 
-.hero-content-box {
+#site-nav a {
+  padding: 20px;
+  margin: 0px -1px;
+  transform: skewX(16deg);
+  
+  text-decoration: none;
+  font-size: 2em;
+
+  color: var(--text-light);
+}
+#site-nav a p {
+  margin: 0px;
+  transform: skewX(-16deg);
+}
+
+#site-nav a:hover, #site-nav a:focus {
+  background-color: var(--background-light);
+}
+#site-nav a:hover p, #site-nav a:focus p {
+  color: var(--text-dark);
+}
+
+a#nav-home p { color: var(--accent-home-dark); }
+a#nav-home:hover,
+a#nav-home:focus { background-color: var(--accent-home); }
+
+a#nav-programming p { color: var(--accent-programming-dark); }
+a#nav-programming:hover,
+a#nav-programming:focus { background-color: var(--accent-programming); }
+
+a#nav-gis p { color: var(--accent-gis-dark); }
+a#nav-gis:hover,
+a#nav-gis:focus { background-color: var(--accent-gis); }
+
+a#nav-visual p { color: var(--accent-visual-dark); }
+a#nav-visual:hover,
+a#nav-visual:focus { background-color: var(--accent-visual); }
+
+.hero {
+  margin: 0px;
+  background-image: linear-gradient(to top right, var(--accent-home), var(--accent-home-dark));
+}
+
+.hero-text {
+  width: max-content;
   text-align: left;
 
-  margin: 100px 100px 10px 100px;
+  margin: 0px 100px 10px 100px;
+  padding-top: 100px;
 
-  color: #ffffff;
+  color: #fff;
 }
 
-.hero-content-box h1 {
+.hero-text h1 {
   margin: 0px 20px 0px 20px;
   padding-bottom: 10px;
-  border-bottom: 2px #ffffff solid;
+  border-bottom: 2px #fff solid;
   
   font-size: 5em;
   font-weight: 300;
 
-  color: #ffffff;
+  color: #fff;
 }
 
-.hero-content-box h2 {
+.hero-text h2 {
   margin: 20px;
 
   font-size: 2em;
   font-weight: 300;
-  color: #ffffff;
+  color: #fff;
 }
 
+
+
 @media (max-width: 1000px) {
-  .hero-content-box {
-    margin: 100px auto 10px auto;
+  .hero-text {
+    margin: 0px auto 10px auto;
+    padding-top: 100px;
   }
 
-  .hero-content-box h2 {
+  .hero-text h2 {
     width: 500px;
   }
 }
 
 @media (max-width: 640px) {
-  .hero-content-box {
+  .hero-text {
     text-align: center;
     width: min-content;
-    margin: 20px auto 10px auto;
+    margin: 0px auto 10px auto;
+    padding-top: 20px;
   }
 
-  .hero-content-box h2 {
+  .hero-text h2 {
     width: auto;
   }
 }
