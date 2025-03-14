@@ -1,5 +1,5 @@
 html {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: sans-serif;
 
   /* Dark mode support */
   background-color: #ffffff;
@@ -36,15 +36,17 @@ body {
   text-align: center;
 }
 
-header {
+.hero {
   display: flex;
   place-items: center;
   
   margin: 0px;
   height: max-content;
+
+  background-color: hsl(234deg, 76%, 47%);
 }
 
-#site-header {
+.hero-content-box {
   text-align: left;
 
   margin: 100px 100px 10px 100px;
@@ -52,27 +54,43 @@ header {
   color: #ffffff;
 }
 
-#site-header .title {
-  margin: 0px;
+.hero-content-box h1 {
+  margin: 0px 20px 0px 20px;
+  padding-bottom: 10px;
   border-bottom: 2px #ffffff solid;
   
   font-size: 5em;
   font-weight: 300;
+
   color: #ffffff;
 }
 
-#site-header .subtitle {
-  margin: 0px;
+.hero-content-box h2 {
+  margin: 20px;
 
   font-size: 2em;
-  font-weight: 600;
+  font-weight: 300;
   color: #ffffff;
 }
 
-@media (max-width: 850px) {
-  #site-header {
-    text-align: center;
-    
+@media (max-width: 1000px) {
+  .hero-content-box {
     margin: 100px auto 10px auto;
+  }
+
+  .hero-content-box h2 {
+    width: 500px;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero-content-box {
+    text-align: center;
+    width: min-content;
+    margin: 20px auto 10px auto;
+  }
+
+  .hero-content-box h2 {
+    width: auto;
   }
 }
