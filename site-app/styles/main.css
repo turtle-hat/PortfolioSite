@@ -12,11 +12,11 @@ html {
   --accent-home:              hsl(235, 76%, 45%);
   --accent-home-dark:         hsl(235, 84%, 30%);
   --accent-programming:       hsl(185, 76%, 30%);
-  --accent-programming-dark:  hsl(185, 84%, 15%);
+  --accent-programming-dark:  hsl(185, 84%, 20%);
   --accent-gis:               hsl(115, 76%, 30%);
-  --accent-gis-dark:          hsl(115, 84%, 15%);
+  --accent-gis-dark:          hsl(115, 84%, 20%);
   --accent-visual:            hsl(310, 76%, 30%);
-  --accent-visual-dark:       hsl(310, 84%, 15%);
+  --accent-visual-dark:       hsl(310, 84%, 20%);
 
   /* Dark mode support */
   background-color: var(--background-light);
@@ -50,19 +50,23 @@ body {
   justify-content: center;
   flex-wrap: wrap;
 
-  background-color: #fff;
+  background-color: var(--background-light);
 }
 
 #site-nav a {
   padding: 20px;
-  margin: 0px -1px;
+  border-width: 0px 0px 5px 0px;
+  border-style: solid;
+
   transform: skewX(16deg);
   
   text-decoration: none;
   font-size: 2em;
 
   color: var(--text-light);
+  background-color: var(--background-light);
 }
+
 #site-nav a p {
   margin: 0px;
   transform: skewX(-16deg);
@@ -75,21 +79,41 @@ body {
   color: var(--text-dark);
 }
 
+a#nav-home p {
+  font-weight: bold;
+}
+
+a#nav-home { border-color: var(--accent-home-dark); }
 a#nav-home p { color: var(--accent-home-dark); }
 a#nav-home:hover,
-a#nav-home:focus { background-color: var(--accent-home); }
+a#nav-home:focus {
+  background-color: var(--accent-home-dark);
+  border-color: var(--accent-home);
+}
 
+a#nav-programming { border-color: var(--accent-programming-dark); }
 a#nav-programming p { color: var(--accent-programming-dark); }
 a#nav-programming:hover,
-a#nav-programming:focus { background-color: var(--accent-programming); }
+a#nav-programming:focus {
+  background-color: var(--accent-programming-dark);
+  border-color: var(--accent-programming);
+}
 
+a#nav-gis { border-color: var(--accent-gis-dark); }
 a#nav-gis p { color: var(--accent-gis-dark); }
 a#nav-gis:hover,
-a#nav-gis:focus { background-color: var(--accent-gis); }
+a#nav-gis:focus {
+  background-color: var(--accent-gis-dark);
+  border-color: var(--accent-gis);
+}
 
+a#nav-visual { border-color: var(--accent-visual-dark); }
 a#nav-visual p { color: var(--accent-visual-dark); }
 a#nav-visual:hover,
-a#nav-visual:focus { background-color: var(--accent-visual); }
+a#nav-visual:focus {
+  background-color: var(--accent-visual-dark);
+  border-color: var(--accent-visual);
+}
 
 .hero {
   margin: 0px;
