@@ -15,8 +15,8 @@ html {
   --accent-programming-dark:  hsl(185, 84%, 20%);
   --accent-gis:               hsl(115, 76%, 30%);
   --accent-gis-dark:          hsl(115, 84%, 20%);
-  --accent-visual:            hsl(310, 76%, 30%);
-  --accent-visual-dark:       hsl(310, 84%, 20%);
+  --accent-art:            hsl(310, 76%, 30%);
+  --accent-art-dark:       hsl(310, 84%, 20%);
 
   /* Dark mode support */
   background-color: var(--background-light);
@@ -50,6 +50,8 @@ body {
   justify-content: center;
   flex-wrap: wrap;
 
+  margin: 2em 0px;
+
   background-color: var(--background-light);
 }
 
@@ -65,6 +67,7 @@ body {
 
   color: var(--text-light);
   background-color: var(--background-light);
+  transition: 100ms;
 }
 
 #site-nav a p {
@@ -107,12 +110,12 @@ a#nav-gis:focus {
   border-color: var(--accent-gis);
 }
 
-a#nav-visual { border-color: var(--accent-visual-dark); }
-a#nav-visual p { color: var(--accent-visual-dark); }
-a#nav-visual:hover,
-a#nav-visual:focus {
-  background-color: var(--accent-visual-dark);
-  border-color: var(--accent-visual);
+a#nav-art { border-color: var(--accent-art-dark); }
+a#nav-art p { color: var(--accent-art-dark); }
+a#nav-art:hover,
+a#nav-art:focus {
+  background-color: var(--accent-art-dark);
+  border-color: var(--accent-art);
 }
 
 .hero {
@@ -149,7 +152,46 @@ a#nav-visual:focus {
   color: #fff;
 }
 
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 
+  width: 1000px;
+  margin: 4em auto;
+
+  background-color: var(--accent-programming);
+}
+
+.gallery-item {
+  max-width: 50%;
+  transition: 100ms;
+}
+
+a.gallery-item:hover,
+a.gallery-item:focus {
+  transform: scale(110%);
+  width: 60%;
+}
+
+a.gallery-item:focus {
+  img {
+    outline: 4px var(--text-light) solid;
+  }
+
+  .programming { outline-color: var(--accent-programming); }
+  .gis { outline-color: var(--accent-gis); }
+  .art { outline-color: var(--accent-art); }
+}
+
+a.gallery-item:hover { z-index: 1; }
+
+a.gallery-item:focus { z-index: 2; }
+
+.gallery-item img {
+  display: block;
+  width: 100%;
+}
 
 @media (max-width: 1000px) {
   .hero-text {
