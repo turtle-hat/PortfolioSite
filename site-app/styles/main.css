@@ -51,13 +51,14 @@ body {
   flex-wrap: wrap;
 
   margin: 2em 0px;
+  padding-top: 1em;
 
   background-color: var(--background-light);
 }
 
 #site-nav a {
   padding: 20px;
-  border-width: 0px 0px 5px 0px;
+  border-width: 5px 0px 5px 0px;
   border-style: solid;
 
   transform: skewX(16deg);
@@ -166,12 +167,38 @@ a#nav-art:focus {
 .gallery-item {
   max-width: 50%;
   transition: 100ms;
+
+  height: min-content;
+
+  overflow-y: hidden;
+}
+
+.gallery-item img {
+  display: block;
+  width: 100%;
+}
+
+.gallery-item-blurb {
+  display: inline;
+  position: absolute;
+  bottom: 50px;
+
+  width: 100%;
+  height: 100px;
+
+  transition: 100ms;
+  
+  background-color: var(--background-dark);
+  color: var(--text-dark);
 }
 
 a.gallery-item:hover,
 a.gallery-item:focus {
   transform: scale(110%);
-  width: 60%;
+
+  .gallery-item-blurb {
+    bottom: 100px;
+  }
 }
 
 a.gallery-item:focus {
@@ -188,10 +215,7 @@ a.gallery-item:hover { z-index: 1; }
 
 a.gallery-item:focus { z-index: 2; }
 
-.gallery-item img {
-  display: block;
-  width: 100%;
-}
+
 
 @media (max-width: 1000px) {
   .hero-text {
