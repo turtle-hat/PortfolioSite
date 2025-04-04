@@ -83,6 +83,12 @@ body {
   color: var(--text-dark);
 }
 
+#site-nav a:focus {
+  outline-width: 5px;
+  outline-style: solid;
+  z-index: 1;
+}
+
 a#nav-home p {
   font-weight: bold;
 }
@@ -93,6 +99,7 @@ a#nav-home:hover,
 a#nav-home:focus {
   background-color: var(--accent-home-dark);
   border-color: var(--accent-home);
+  outline-color: var(--accent-home);
 }
 
 a#nav-programming { border-color: var(--accent-programming-dark); }
@@ -101,6 +108,7 @@ a#nav-programming:hover,
 a#nav-programming:focus {
   background-color: var(--accent-programming-dark);
   border-color: var(--accent-programming);
+  outline-color: var(--accent-programming);
 }
 
 a#nav-gis { border-color: var(--accent-gis-dark); }
@@ -109,6 +117,7 @@ a#nav-gis:hover,
 a#nav-gis:focus {
   background-color: var(--accent-gis-dark);
   border-color: var(--accent-gis);
+  outline-color: var(--accent-gis);
 }
 
 a#nav-art { border-color: var(--accent-art-dark); }
@@ -117,6 +126,7 @@ a#nav-art:hover,
 a#nav-art:focus {
   background-color: var(--accent-art-dark);
   border-color: var(--accent-art);
+  outline-color: var(--accent-art);
 }
 
 .hero {
@@ -158,15 +168,16 @@ a#nav-art:focus {
   flex-wrap: wrap;
   justify-content: center;
 
-  width: 80vw;
+  width: 80%;
   margin: 4em auto;
-
-  background-color: var(--accent-programming);
 }
 
 .gallery-item {
-  margin: 1%;
+  flex-grow: 1;
+  
+  margin: 1.6%;
   max-width: 40%;
+  width: 40%;
   height: 30%;
   overflow: hidden;
   
@@ -176,18 +187,23 @@ a#nav-art:focus {
   transition: transform 200ms ease-in-out;
 }
 
+.gallery-item.full {
+  max-width: 60%;
+  width: 60%;
+}
+
 .gallery-item>a {
   display: block;
-  
   width: 100%;
   height: 100%;
 }
 
 .gallery-item>a>img {
-  position: relative;
-  bottom: 0;
   display: block;
   width: 100%;
+
+  position: relative;
+  bottom: 0;
   
   transform: scale(105%);
   transition: transform 200ms ease-in-out;
@@ -204,6 +220,8 @@ a#nav-art:focus {
 
   transform: translateY(100%);
   transition: transform 300ms ease-in-out;
+
+  padding: 10px;
 }
 
 
@@ -236,6 +254,10 @@ a#nav-art:focus {
 
   .hero-text h2 {
     width: 500px;
+  }
+
+  .gallery {
+    width: 100%;
   }
 }
 
