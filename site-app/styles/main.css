@@ -68,7 +68,7 @@ body {
 
   color: var(--text-light);
   background-color: var(--background-light);
-  transition: 100ms;
+  transition: color 100ms ease, background-color 100ms ease;
 }
 
 #site-nav a p {
@@ -158,66 +158,77 @@ a#nav-art:focus {
   flex-wrap: wrap;
   justify-content: center;
 
-  width: 1000px;
+  width: 80vw;
   margin: 4em auto;
 
   background-color: var(--accent-programming);
 }
 
 .gallery-item {
-  max-width: 50%;
-  transition: 100ms;
+  margin: 1%;
+  max-width: 40%;
+  height: 30%;
+  overflow: hidden;
+  
+  z-index: 0;
 
-  height: min-content;
-
-  overflow-y: hidden;
+  transform: scale(100%);
+  transition: transform 200ms ease-in-out;
 }
 
-.gallery-item img {
+.gallery-item>a {
+  display: block;
+  
+  width: 100%;
+  height: 100%;
+}
+
+.gallery-item>a>img {
+  position: relative;
+  bottom: 0;
   display: block;
   width: 100%;
+  
+  transform: scale(105%);
+  transition: transform 200ms ease-in-out;
 }
 
 .gallery-item-blurb {
-  display: inline;
-  position: absolute;
-  bottom: 50px;
-
-  width: 100%;
-  height: 100px;
-
-  transition: 100ms;
-  
   background-color: var(--background-dark);
   color: var(--text-dark);
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  transform: translateY(100%);
+  transition: transform 300ms ease-in-out;
 }
 
-a.gallery-item:hover,
-a.gallery-item:focus {
-  transform: scale(110%);
+
+
+.gallery-item:hover,
+.gallery-item:focus-within
+{
+  transform: scale(105%);
+
+  img {
+    transform: scale(100%);
+  }
 
   .gallery-item-blurb {
-    bottom: 100px;
+    transform: translateY(0);
   }
 }
 
-a.gallery-item:focus {
-  img {
-    outline: 4px var(--text-light) solid;
-  }
-
-  .programming { outline-color: var(--accent-programming); }
-  .gis { outline-color: var(--accent-gis); }
-  .art { outline-color: var(--accent-art); }
+.gallery-item:focus-within {
+  z-index: 1;
 }
 
-a.gallery-item:hover { z-index: 1; }
-
-a.gallery-item:focus { z-index: 2; }
 
 
-
-@media (max-width: 1000px) {
+@media (max-width: 1080px) {
   .hero-text {
     margin: 0px auto 10px auto;
     padding-top: 100px;
