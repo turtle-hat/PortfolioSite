@@ -7,22 +7,22 @@ html {
   
   --text-light:               #111111;
   --text-dark:                #ffffff;
-  --background-lighter:       rgb(255, 255, 255);
-  --background-light:         rgb(218, 219, 231);
-  --background-dark:          rgb(37, 39, 57);
-  --background-darker:        rgb(3, 3, 20);
-  --accent-home:              rgb(18, 35, 219);
-  --accent-programming:       rgb(0, 124, 146);
-  --accent-gis:               rgb(63, 143, 5);
-  --accent-art:               rgb(153, 100, 18);
-  --accent-home-dark:         rgb(4, 15, 129);
-  --accent-programming-dark:  rgb(0, 81, 97);
-  --accent-gis-dark:          rgb(41, 101, 0);
-  --accent-art-dark:          rgb(111, 75, 16);
-  --accent-home-light:        rgb(143, 152, 255);
-  --accent-programming-light: rgb(130, 214, 230);
-  --accent-gis-light:         rgb(165, 221, 122);
-  --accent-art-light:         rgb(238, 191, 115);
+  --background-lighter:       #ffffff;
+  --background-light:         #ebebf5;
+  --background-dark:          #252739;
+  --background-darker:        #030314;
+  --accent-home:              #1223db;
+  --accent-programming:       #007c92;
+  --accent-gis:               #3a8505;
+  --accent-art:               #996412;
+  --accent-home-dark:         #040f81;
+  --accent-programming-dark:  #005161;
+  --accent-gis-dark:          #296500;
+  --accent-art-dark:          #6f4b10;
+  --accent-home-light:        #8f98ff;
+  --accent-programming-light: #82d6e6;
+  --accent-gis-light:         #a5dd7a;
+  --accent-art-light:         #eebf73;
 
   background-color: light-dark(var(--background-lighter), var(--background-darker));
   
@@ -30,15 +30,25 @@ html {
 }
 
 body {
-  margin: 0px;
   text-align: center;
+  margin: 0px;
 
   background-color: light-dark(var(--background-light), var(--background-dark));
+}
+
+main {
+  margin: 2rem 0px;
 }
 
 footer {
   background-color: light-dark(var(--background-lighter), var(--background-darker));
   padding: 2rem 0;
+}
+
+main>p {
+  width: 80%;
+  margin: auto;
+  font-size: 16pt;
 }
 
 #site-nav {
@@ -128,6 +138,18 @@ a#nav-art:focus {
 .hero {
   margin: 0px;
   background-image: linear-gradient(to top right, var(--accent-home), var(--accent-home-dark));
+}
+
+.hero.programming {
+  background-image: linear-gradient(to top right, var(--accent-programming), var(--accent-programming-dark));
+}
+
+.hero.gis {
+  background-image: linear-gradient(to top right, var(--accent-gis), var(--accent-gis-dark));
+}
+
+.hero.art {
+  background-image: linear-gradient(to top right, var(--accent-art), var(--accent-art-dark));
 }
 
 .hero-text {
