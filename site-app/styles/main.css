@@ -4,45 +4,41 @@ html {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
+  --text-light:               #111111;
+  --text-dark:                #ffffff;
+  --background-lighter:       rgb(255, 255, 255);
+  --background-light:         rgb(218, 219, 231);
+  --background-dark:          rgb(37, 39, 57);
+  --background-darker:        rgb(3, 3, 20);
+  --accent-home:              rgb(18, 35, 219);
+  --accent-programming:       rgb(0, 124, 146);
+  --accent-gis:               rgb(63, 143, 5);
+  --accent-art:               rgb(153, 100, 18);
+  --accent-home-dark:         rgb(4, 15, 129);
+  --accent-programming-dark:  rgb(0, 81, 97);
+  --accent-gis-dark:          rgb(41, 101, 0);
+  --accent-art-dark:          rgb(111, 75, 16);
+  --accent-home-light:        rgb(143, 152, 255);
+  --accent-programming-light: rgb(130, 214, 230);
+  --accent-gis-light:         rgb(165, 221, 122);
+  --accent-art-light:         rgb(238, 191, 115);
 
-  --background-light:         #fff;
-  --background-dark:          #333;
-  --text-light:               #111;
-  --text-dark:                #fff;
-  --accent-home:              hsl(235, 76%, 45%);
-  --accent-home-dark:         hsl(235, 84%, 30%);
-  --accent-programming:       hsl(185, 76%, 30%);
-  --accent-programming-dark:  hsl(185, 84%, 20%);
-  --accent-gis:               hsl(115, 76%, 30%);
-  --accent-gis-dark:          hsl(115, 84%, 20%);
-  --accent-art:            hsl(310, 76%, 30%);
-  --accent-art-dark:       hsl(310, 84%, 20%);
-
-  /* Dark mode support */
-  background-color: var(--background-light);
-
-  /* color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424; */
+  background-color: light-dark(var(--background-lighter), var(--background-darker));
+  
+  color-scheme: light dark;
 }
-
-/* Dark mode support */
-/* @media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-} */
 
 body {
   margin: 0px;
   text-align: center;
+
+  background-color: light-dark(var(--background-light), var(--background-dark));
+}
+
+footer {
+  background-color: light-dark(var(--background-lighter), var(--background-darker));
+  padding: 2rem 0;
 }
 
 #site-nav {
@@ -51,13 +47,13 @@ body {
   flex-wrap: wrap;
 
   margin: 2em 0px;
-  padding-top: 1em;
+  padding: 2rem 0;
 
-  background-color: var(--background-light);
+  background-color: light-dark(var(--background-lighter), var(--background-darker));
 }
 
 #site-nav a {
-  padding: 20px;
+  padding: 1rem;
   border-width: 5px 0px 5px 0px;
   border-style: solid;
 
@@ -66,8 +62,8 @@ body {
   text-decoration: none;
   font-size: 2em;
 
-  color: var(--text-light);
-  background-color: var(--background-light);
+  color: light-dark(var(--text-light), var(--text-dark));
+  background-color: light-dark(var(--background-lighter), var(--background-darker));
   transition: color 100ms ease, background-color 100ms ease;
 }
 
@@ -77,7 +73,7 @@ body {
 }
 
 #site-nav a:hover, #site-nav a:focus {
-  background-color: var(--background-light);
+  background-color: none;
 }
 #site-nav a:hover p, #site-nav a:focus p {
   color: var(--text-dark);
@@ -93,8 +89,8 @@ a#nav-home p {
   font-weight: bold;
 }
 
-a#nav-home { border-color: var(--accent-home-dark); }
-a#nav-home p { color: var(--accent-home-dark); }
+a#nav-home { border-color: light-dark(var(--accent-home-dark), var(--accent-home-light)); }
+a#nav-home p { color: light-dark(var(--accent-home-dark), var(--accent-home-light)); }
 a#nav-home:hover,
 a#nav-home:focus {
   background-color: var(--accent-home-dark);
@@ -102,8 +98,8 @@ a#nav-home:focus {
   outline-color: var(--accent-home);
 }
 
-a#nav-programming { border-color: var(--accent-programming-dark); }
-a#nav-programming p { color: var(--accent-programming-dark); }
+a#nav-programming { border-color: light-dark(var(--accent-programming-dark), var(--accent-programming-light)); }
+a#nav-programming p { color: light-dark(var(--accent-programming-dark), var(--accent-programming-light)); }
 a#nav-programming:hover,
 a#nav-programming:focus {
   background-color: var(--accent-programming-dark);
@@ -111,8 +107,8 @@ a#nav-programming:focus {
   outline-color: var(--accent-programming);
 }
 
-a#nav-gis { border-color: var(--accent-gis-dark); }
-a#nav-gis p { color: var(--accent-gis-dark); }
+a#nav-gis { border-color: light-dark(var(--accent-gis-dark), var(--accent-gis-light)); }
+a#nav-gis p { color: light-dark(var(--accent-gis-dark), var(--accent-gis-light)); }
 a#nav-gis:hover,
 a#nav-gis:focus {
   background-color: var(--accent-gis-dark);
@@ -120,8 +116,8 @@ a#nav-gis:focus {
   outline-color: var(--accent-gis);
 }
 
-a#nav-art { border-color: var(--accent-art-dark); }
-a#nav-art p { color: var(--accent-art-dark); }
+a#nav-art { border-color: light-dark(var(--accent-art-dark), var(--accent-art-light)); }
+a#nav-art p { color: light-dark(var(--accent-art-dark), var(--accent-art-light)); }
 a#nav-art:hover,
 a#nav-art:focus {
   background-color: var(--accent-art-dark);
@@ -138,8 +134,8 @@ a#nav-art:focus {
   width: max-content;
   text-align: left;
 
-  margin: 0px 100px 10px 100px;
-  padding-top: 100px;
+  margin: 0px 2em 0.1em 2em;
+  padding-top: 3em;
 
   color: #fff;
 }
@@ -169,7 +165,7 @@ a#nav-art:focus {
   justify-content: center;
 
   width: 80%;
-  margin: 4em auto;
+  margin: auto;
 }
 
 .gallery-item {
@@ -179,8 +175,8 @@ a#nav-art:focus {
   max-width: 40%;
   width: 40%;
   height: 30%;
-  overflow: hidden;
-  
+  overflow: clip;
+
   z-index: 0;
 
   transform: scale(100%);
@@ -242,14 +238,19 @@ a#nav-art:focus {
 
 .gallery-item:focus-within {
   z-index: 1;
+  outline-width: 0.5rem;
+  outline-style: solid;
 }
 
+.gallery-item.programming:focus-within { outline-color: var(--accent-programming); }
+.gallery-item.gis:focus-within { outline-color: var(--accent-gis); }
+.gallery-item.art:focus-within { outline-color: var(--accent-art); }
 
-
+/* Tablet view */
 @media (max-width: 1080px) {
   .hero-text {
-    margin: 0px auto 10px auto;
-    padding-top: 100px;
+    margin: 0px auto 0.1em auto;
+    padding-top: 3em;
   }
 
   .hero-text h2 {
@@ -261,15 +262,47 @@ a#nav-art:focus {
   }
 }
 
+/* Mobile view */
 @media (max-width: 640px) {
   .hero-text {
     text-align: center;
     width: min-content;
-    margin: 0px auto 10px auto;
-    padding-top: 20px;
+    margin: 0px auto 0.1em auto;
+    padding-top: 3em;
   }
 
   .hero-text h2 {
     width: auto;
   }
+
+  #site-nav {
+    display: block;
+
+    margin: 0px;
+  }
+
+  #site-nav a {
+    display: block;
+    padding: 10px;
+    border-width: 0px 5px;
+
+    transform: skewX(0deg);
+  }
+
+  #site-nav a p {
+    transform: skewX(0deg);
+  }
+
+  .gallery-item, .gallery-item.full {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .gallery-item:hover,
+  .gallery-item:focus-within
+  {
+    transform: scale(100%);
+  }
 }
+
+
