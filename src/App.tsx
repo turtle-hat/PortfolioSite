@@ -1,5 +1,11 @@
+import Footer from "./Footer";
+import Gallery from "./Gallery";
+import Header from "./Header";
+
 export default function App() {
-    return <main>
-        <p>Hello World!</p>
-    </main>
+    return <>
+        <Header/>
+        <Gallery/>
+        <Footer/>
+    </>;
 }
