@@ -1,5 +1,5 @@
 html {
-  font-family: sans-serif;
+  font-family: 'Cabin', sans-serif;
 
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -56,7 +56,7 @@ main>p {
   justify-content: center;
   flex-wrap: wrap;
 
-  margin: 2em 0px;
+  margin: 0px 0px 2em;
   padding: 2rem 0;
 
   background-color: light-dark(var(--background-lighter), var(--background-darker));
