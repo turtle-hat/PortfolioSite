@@ -1,0 +1,7 @@
+ok first things first
+
+just make a single page app where you can view all the portfolio items vertically
+
+then you can improve it with multiple pages and gallery items and such
+
+
