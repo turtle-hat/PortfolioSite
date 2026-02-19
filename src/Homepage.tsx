@@ -5,7 +5,7 @@ import Nav from "./Nav";
 
 import homepageGallery from "../data/homepage-gallery"
 
-export default function App() {
+export default function Homepage() {
     return <>
         <Header/>
         <Nav/>

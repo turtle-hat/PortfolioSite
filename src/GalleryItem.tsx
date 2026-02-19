@@ -1,7 +1,7 @@
 export type GalleryItemProps = {
     name: string,
     link: string,
-    img: string
+    img: string,
     blurb: string,
     tags?: string
 }
