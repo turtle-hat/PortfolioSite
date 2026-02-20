@@ -407,6 +407,11 @@ a.nav-art:focus {
 .project>.content {
   grid-area: content;
   font-size: 16pt;
+  line-height: 24pt;
+}
+
+.project p, .project ul {
+  margin: 1.5em 0;
 }
 
 @media (max-width: 1080px) {
@@ -425,8 +430,8 @@ a.nav-art:focus {
   .project>.title {
     grid-area: title;
 
-    font-size: 4em;
     margin: auto;
+    font-size: 4em;
 
     justify-self: left;
   }
@@ -453,5 +458,50 @@ a.nav-art:focus {
 
   .project>.subtitle {
     text-align: center;
+  }
+}
+
+.image-list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 1.5em;
+}
+
+.image-list-item {
+  height: 200px;
+}
+
+@media (max-width: 1080px) {
+  .image-list-item {
+    height: 150px;
+  }
+}
+
+@media (max-width: 720px) {
+  .image-list {
+    display: block;
+    column-count: 2;
+    column-gap: 1.5em;
+  }
+
+  .image-list-item {
+    height: auto;
+    width: 100%;
+    margin: 1em 0 0;
+  }
+
+  .image-list-item:nth-child(2n) {
+    order: 1;
+  }
+}
+
+@media (max-width: 640px) {
+  .image-list {
+    column-count: 1;
+  }
+
+  .image-list-item {
+    margin: 1em 0 0;
   }
 }

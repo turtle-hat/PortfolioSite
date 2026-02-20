@@ -22,6 +22,18 @@ export default function Homepage() {
                         <li>fact 2</li>
                         <li>fact 3</li>
                     </ul>
+                    <div className="image-list">
+                        <img className="image-list-item" src="img/projects/test/Foto50.JPG" alt="screenshot 1" title="bleh"/>
+                        <img className="image-list-item" src="img/projects/test/Foto103.JPG" alt="screenshot 2"/>
+                        <img className="image-list-item" src="img/projects/test/Foto299.JPG" alt="screenshot 3"/>
+                        <img className="image-list-item" src="img/projects/test/Foto339.JPG" alt="screenshot 4"/>
+                        <img className="image-list-item" src="img/projects/test/Foto363.JPG" alt="screenshot 5"/>
+                        <img className="image-list-item" src="img/projects/test/Foto388.JPG" alt="screenshot 6"/>
+                        <img className="image-list-item" src="img/projects/test/Foto404.jpg" alt="screenshot 7"/>
+                        <img className="image-list-item" src="img/projects/test/Foto478.JPG" alt="screenshot 8"/>
+                        <img className="image-list-item" src="img/projects/test/Foto490.jpg" alt="screenshot 9"/>
+                        <img className="image-list-item" src="img/projects/test/Foto1050.JPG" alt="screenshot 10"/>
+                    </div>
                 </div>
             </section>
         </main>
