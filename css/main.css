@@ -31,24 +31,32 @@ html {
 }
 
 body {
-  text-align: center;
   margin: 0px;
 
-  background-color: light-dark(var(--background-light), var(--background-dark));
+  background-color: light-dark(var(--background-lighter), var(--background-dark));
 }
 
 main {
-  margin: 2rem 0px;
+  margin: 4em 0px;
 }
 
 footer {
-  background-color: light-dark(var(--background-lighter), var(--background-darker));
   padding: 2rem 0;
+
+  text-align: center;
+
+  color: var(--text-dark);
 }
+
+footer             { background-image: linear-gradient(to bottom right, var(--accent-home), var(--accent-home-dark)); }
+footer.programming { background-image: linear-gradient(to bottom right, var(--accent-programming), var(--accent-programming-dark)); }
+footer.gis         { background-image: linear-gradient(to bottom right, var(--accent-gis), var(--accent-gis-dark)); }
+footer.art         { background-image: linear-gradient(to bottom right, var(--accent-art), var(--accent-art-dark)); }
 
 main>p {
   width: 80%;
   margin: auto;
+
   font-size: 16pt;
 }
 
@@ -79,6 +87,7 @@ main>p {
 
 .site-nav a p {
   margin: 0px;
+
   transform: skewX(-16deg);
 }
 
@@ -138,20 +147,12 @@ a.nav-art:focus {
 .hero {
   margin: 0px;
   padding: 2rem;
-  background-image: linear-gradient(to top right, var(--accent-home), var(--accent-home-dark));
 }
 
-.hero.programming {
-  background-image: linear-gradient(to top right, var(--accent-programming), var(--accent-programming-dark));
-}
-
-.hero.gis {
-  background-image: linear-gradient(to top right, var(--accent-gis), var(--accent-gis-dark));
-}
-
-.hero.art {
-  background-image: linear-gradient(to top right, var(--accent-art), var(--accent-art-dark));
-}
+.hero             { background-image: linear-gradient(to top right, var(--accent-home), var(--accent-home-dark)); }
+.hero.programming { background-image: linear-gradient(to top right, var(--accent-programming), var(--accent-programming-dark)); }
+.hero.gis         { background-image: linear-gradient(to top right, var(--accent-gis), var(--accent-gis-dark)); }
+.hero.art         { background-image: linear-gradient(to top right, var(--accent-art), var(--accent-art-dark)); }
 
 .hero-text {
   width: max-content;
@@ -159,18 +160,16 @@ a.nav-art:focus {
 
   margin: 0px 2em;
 
-  color: #fff;
+  color: var(--text-dark);
 }
 
 .hero-text h1 {
   margin: 0px 20px 0px 20px;
   padding-bottom: 10px;
-  border-bottom: 5px #fff solid;
+  border-bottom: 5px var(--text-dark) solid;
   
   font-size: 5em;
   font-weight: 300;
-
-  color: #fff;
 }
 
 .hero-text h2 {
@@ -178,7 +177,6 @@ a.nav-art:focus {
 
   font-size: 2em;
   font-weight: 300;
-  color: #fff;
 }
 
 .gallery {
@@ -186,8 +184,11 @@ a.nav-art:focus {
   flex-wrap: wrap;
   justify-content: center;
 
-  width: 80%;
-  margin: auto;
+  width: 100%;
+  padding: 2em 10%;
+  box-sizing: border-box;
+
+  background-color: light-dark(var(--background-light), var(--background-darker));
 }
 
 .gallery-item {
@@ -233,19 +234,20 @@ a.nav-art:focus {
   flex-direction: column;
   justify-content: space-evenly;
 
-  background-color: var(--background-dark-trans);
-  color: var(--text-dark);
-
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-
+  padding: 20px;
+  
   transform: translateY(100%);
   transition: transform 300ms ease-in-out;
+  
+  background-color: var(--background-dark-trans);
+  color: var(--text-dark);
 
-  padding: 20px;
+  text-align: center;
 }
 
 .gallery-item-blurb>* {
@@ -301,6 +303,7 @@ a.nav-art:focus {
 
   .gallery {
     width: 100%;
+    padding: 2em 0px;
   }
 
   .gallery-item-blurb>h1 {font-size: 3vw;}
