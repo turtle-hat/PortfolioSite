@@ -1,4 +1,6 @@
+import { nanoid } from "nanoid"
 import type { ReactElement } from "react"
+
 import ImageListItem from "./ImageListItem"
 import type { ImageListItemProps } from "./ImageListItem"
 
@@ -9,13 +11,14 @@ interface ImageListProps {
 export default function ImageList( { data }  : ImageListProps) {
     const images : ReactElement[] = data.map(imageData =>
         <ImageListItem
+            key={nanoid()}
             image={imageData.image}
             title={imageData.title}
             content={imageData.content}
         />
     );
     
-    return <>
+    return <div className="image-list">
         {images}
-    </>
+    </div>
 }
