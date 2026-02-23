@@ -159,7 +159,7 @@ a.nav-art:focus {
 
   .site-nav a {
     padding: 10px;
-    border-width: 0px 5px;
+    border-width: 0 1em;
 
     transform: skewX(0deg);
   }
