@@ -5,7 +5,7 @@ interface FooterProps {
 export default function Footer({variant} : FooterProps) {
     return (
         <footer className={variant}>
-            <p>&copy;2025 Owen Gebhardt</p>
+            <p>&copy;2026 Owen Gebhardt</p>
         </footer>
     );
 }

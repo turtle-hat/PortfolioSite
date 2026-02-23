@@ -2,16 +2,20 @@ import { nanoid } from "nanoid";
 import type { ReactElement } from "react";
 
 import Footer from "./Footer";
-import Gallery from "./Gallery";
 import Header from "./Header";
-import Nav from "./Nav";
 import Project from "./Project";
 
-import homepageGallery from "../data/homepage-gallery"
 import homepageProjects from "../data/homepage-projects"
 
 export default function Homepage() {
-    const projects : ReactElement[] = homepageProjects.map(project => 
+    const tagFilter : string[] = ["programming"];
+
+    const projects : ReactElement[] = homepageProjects.map(project => {
+        // Convert projectTags into array
+        const projectTags : string[] = project.tags.split(" ");
+        
+        // Only display project if the filter contains one of its tags
+        return tagFilter.length === 0 || tagFilter.some(tag => projectTags.includes(tag)) ?
         <Project
             key={nanoid()}
             title={project.title}
@@ -20,7 +24,8 @@ export default function Homepage() {
             content={project.content}
             imageList={project.imageList}
         />
-    );
+        : <></>
+    });
 
     return <>
         <Header />
