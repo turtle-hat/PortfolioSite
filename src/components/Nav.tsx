@@ -4,7 +4,7 @@ export default function Nav() {
             <a className="nav-home" href="index.html"><p>Home</p></a>
             <a className="nav-programming" href="programming.html"><p>Programming</p></a>
             <a className="nav-gis" href="gis.html"><p>GIS</p></a>
-            <a className="nav-art" href="art.html"><p>Art</p></a>
+            <a className="nav-design" href="design.html"><p>Design</p></a>
         </nav>
     );
 }

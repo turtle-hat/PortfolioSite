@@ -1,3 +1,6 @@
+import { createRoot } from 'react-dom/client';
+import { StrictMode } from 'react';
+
 import Header from "./components/Header";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
@@ -5,20 +8,19 @@ import ProjectList from "./components/ProjectList";
 
 import homepageProjects from "../data/homepage-projects"
 
-export default function Homepage() {
-
-    return <>
+createRoot(document.getElementById("root")!).render(
+    <StrictMode>
         <Header
-            title="Owen Gebhardt"
-            subtitle="Multifaceted, meticulous developer of enjoyable experiences"
+            title="Programming"
+            variant="programming"
         />
         <Nav/>
         <main>
             <ProjectList
                 data={homepageProjects}
-                tagFilter={""}
+                tagFilter={"programming"}
             />
         </main>
-        <Footer />
-    </>;
-}
+        <Footer variant='programming'/>
+    </StrictMode>
+);

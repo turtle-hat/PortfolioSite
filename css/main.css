@@ -15,15 +15,15 @@ html {
   --accent-home:              #1223db;
   --accent-programming:       #007c92;
   --accent-gis:               #3a8505;
-  --accent-art:               #996412;
+  --accent-design:            #996412;
   --accent-home-dark:         #040f81;
   --accent-programming-dark:  #005161;
   --accent-gis-dark:          #296500;
-  --accent-art-dark:          #6f4b10;
+  --accent-design-dark:       #6f4b10;
   --accent-home-light:        #8f98ff;
   --accent-programming-light: #82d6e6;
   --accent-gis-light:         #a5dd7a;
-  --accent-art-light:         #eebf73;
+  --accent-design-light:      #eebf73;
 
   background-color: light-dark(var(--background-light), var(--background-darker));
   
@@ -51,7 +51,7 @@ footer {
 footer             { background-image: linear-gradient(to bottom right, var(--accent-home), var(--accent-home-dark)); }
 footer.programming { background-image: linear-gradient(to bottom right, var(--accent-programming), var(--accent-programming-dark)); }
 footer.gis         { background-image: linear-gradient(to bottom right, var(--accent-gis), var(--accent-gis-dark)); }
-footer.art         { background-image: linear-gradient(to bottom right, var(--accent-art), var(--accent-art-dark)); }
+footer.design      { background-image: linear-gradient(to bottom right, var(--accent-design), var(--accent-design-dark)); }
 
 main>p {
   width: 80%;
@@ -135,13 +135,13 @@ a.nav-gis:focus {
   outline-color: var(--accent-gis);
 }
 
-a.nav-art { border-color: light-dark(var(--accent-art-dark), var(--accent-art-light)); }
-a.nav-art p { color: light-dark(var(--accent-art-dark), var(--accent-art-light)); }
-a.nav-art:hover,
-a.nav-art:focus {
-  background-color: var(--accent-art-dark);
-  border-color: var(--accent-art);
-  outline-color: var(--accent-art);
+a.nav-design { border-color: light-dark(var(--accent-design-dark), var(--accent-design-light)); }
+a.nav-design p { color: light-dark(var(--accent-design-dark), var(--accent-design-light)); }
+a.nav-design:hover,
+a.nav-design:focus {
+  background-color: var(--accent-design-dark);
+  border-color: var(--accent-design);
+  outline-color: var(--accent-design);
 }
 
 @media (max-width: 1080px) {
@@ -159,7 +159,7 @@ a.nav-art:focus {
 
   .site-nav a {
     padding: 10px;
-    border-width: 0 1em;
+    border-width: 0 0.5em;
 
     transform: skewX(0deg);
   }
@@ -177,7 +177,7 @@ a.nav-art:focus {
 .hero             { background-image: linear-gradient(to top right, var(--accent-home), var(--accent-home-dark)); }
 .hero.programming { background-image: linear-gradient(to top right, var(--accent-programming), var(--accent-programming-dark)); }
 .hero.gis         { background-image: linear-gradient(to top right, var(--accent-gis), var(--accent-gis-dark)); }
-.hero.art         { background-image: linear-gradient(to top right, var(--accent-art), var(--accent-art-dark)); }
+.hero.design      { background-image: linear-gradient(to top right, var(--accent-design), var(--accent-design-dark)); }
 
 .hero-text {
   width: max-content;
@@ -332,7 +332,7 @@ a.nav-art:focus {
 
 .gallery-item.programming:focus-within { outline-color: var(--accent-programming); }
 .gallery-item.gis:focus-within { outline-color: var(--accent-gis); }
-.gallery-item.art:focus-within { outline-color: var(--accent-art); }
+.gallery-item.design:focus-within { outline-color: var(--accent-design); }
 
 @media (max-width: 1080px) {
   .gallery {
@@ -372,7 +372,6 @@ a.nav-art:focus {
     "content  content" /
     1fr 1fr
   ;
-  justify-items: center;
   align-items: center;
   gap: 3em;
 

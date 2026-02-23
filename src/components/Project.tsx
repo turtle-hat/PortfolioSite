@@ -12,7 +12,7 @@ export type ProjectProps = {
 }
 
 export default function Project({ title, subtitle, thumbnail, content, tags, imageList } : ProjectProps) {
-    return <section className={`project ${tags}`}>
+    return <section className={`project ${tags ?? ""}`}>
         <h1 className="title">{title}</h1>
         <h2 className="subtitle">{subtitle}</h2>
         <img className="thumbnail" src={thumbnail} alt={`${title} thumbnail`} />
