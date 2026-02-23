@@ -1,36 +1,23 @@
-import { nanoid } from "nanoid";
-import type { ReactElement } from "react";
-
-import Footer from "./Footer";
-import Header from "./Header";
-import Project from "./Project";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import ProjectList from "./components/ProjectList";
 
 import homepageProjects from "../data/homepage-projects"
+import Nav from "./components/Nav";
 
 export default function Homepage() {
-    const tagFilter : string[] = ["programming"];
-
-    const projects : ReactElement[] = homepageProjects.map(project => {
-        // Convert projectTags into array
-        const projectTags : string[] = project.tags.split(" ");
-        
-        // Only display project if the filter contains one of its tags
-        return tagFilter.length === 0 || tagFilter.some(tag => projectTags.includes(tag)) ?
-        <Project
-            key={nanoid()}
-            title={project.title}
-            subtitle={project.subtitle}
-            thumbnail={project.thumbnail}
-            content={project.content}
-            imageList={project.imageList}
-        />
-        : <></>
-    });
 
     return <>
-        <Header />
+        <Header
+            title="Owen Gebhardt"
+            subtitle="Multifaceted, meticulous developer of enjoyable experiences"
+        />
+        <Nav/>
         <main>
-            {projects}
+            <ProjectList
+                data={homepageProjects}
+                tagFilter={""}
+            />
         </main>
         <Footer />
     </>;

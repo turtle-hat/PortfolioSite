@@ -197,6 +197,10 @@ a.nav-art:focus {
   font-weight: 300;
 }
 
+.hero-text h1:only-child {
+  border-bottom: none;
+}
+
 .hero-text h2 {
   margin: 20px;
 
