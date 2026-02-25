@@ -2,11 +2,15 @@ import audioVisualizerPhoto1 from "../img/projects/audio-visualizer/screenshot-1
 import audioVisualizerPhoto2 from "../img/projects/audio-visualizer/screenshot-2.jpg";
 import audioVisualizerPhoto3 from "../img/projects/audio-visualizer/screenshot-3.jpg";
 
+import arrowAcePhoto1 from "../img/projects/arrow-ace/screenshot-1.jpg";
+import arrowAcePhoto2 from "../img/projects/arrow-ace/screenshot-2.jpg";
+import arrowAcePhoto3 from "../img/projects/arrow-ace/screenshot-3.jpg";
+
 import avocadoAttorneyPhoto1 from "../img/projects/avocado-attorney/screenshot-1.png";
 import avocadoAttorneyPhoto2 from "../img/projects/avocado-attorney/screenshot-2.png";
 import avocadoAttorneyPhoto3 from "../img/projects/avocado-attorney/screenshot-3.png";
 
-// import digitalTwinPhoto1 from "../img/projects/digital-twin/screenshot-1.jpg";
+import digitalTwinPhoto1 from "../img/projects/digital-twin/screenshot-1.jpg";
 
 import direct3dPhoto1 from "../img/projects/direct3d-11-renderer/screenshot-1.jpg";
 import direct3dPhoto2 from "../img/projects/direct3d-11-renderer/screenshot-2.jpg";
@@ -26,6 +30,10 @@ import rgdcPostersPhoto2 from "../img/projects/rgdc-posters/poster-1.jpg";
 import rgdcPostersPhoto3 from "../img/projects/rgdc-posters/poster-2.jpg";
 import rgdcPostersPhoto4 from "../img/projects/rgdc-posters/poster-3.jpg";
 
+import roundAndRoundTripPhoto1 from "../img/projects/round-and-round-trip/screenshot-1.png";
+import roundAndRoundTripPhoto2 from "../img/projects/round-and-round-trip/screenshot-2.jpg";
+import roundAndRoundTripPhoto3 from "../img/projects/round-and-round-trip/screenshot-3.jpg";
+
 import tangramsPhoto1 from "../img/projects/tangrams/screenshot-1.jpg";
 import tangramsPhoto2 from "../img/projects/tangrams/screenshot-2.jpg";
 import tangramsPhoto3 from "../img/projects/tangrams/screenshot-3.jpg";
@@ -34,8 +42,7 @@ import tangramsPhoto3 from "../img/projects/tangrams/screenshot-3.jpg";
 
 
 export default [
-    {
-        title: "Ten Grams of Tangrams",
+    {title: "Ten Grams of Tangrams",
         subtitle: "HTML - CSS - JavaScript - PixiJS",
         thumbnail: tangramsPhoto1,
         tags: "programming web design",
@@ -43,7 +50,7 @@ export default [
             <p>For the final project in my Intro to Game Web Technology course during Fall 2022, I needed to design and program a video game to run in a web browser. As a kid, I used to play with a set of plastic puzzle pieces called tangrams, which includes a number of specific triangles and quadrilaterals. I brainstormed off from that idea and decided on a design for a puzzle game that tasks the player with fitting a set of angular pieces snugly into a board, much like a jigsaw puzzle.</p>
             <p>Each puzzle is created by procedurally dividing a full board into a random set of pieces, which are assigned a random color and scattered on the left to hide their original positions. Each piece is stored as a list of positions representing the filled triangles they’re made of, which is cross-referenced against a grid of occupied and unoccupied triangles in the board whenever one is placed.</p>
             <p>I hope to continue development on this game in the future. Due to the way triangle directionality is processed, pieces can currently only be placed on tiles that allow the diagonal lines across each square to match up. I’d like to remove this restriction to make gameplay more intuitive and allow greater creativity. Additionally, playtesting revealed that the piece sizes need to be more constrained: puzzles often contain tiny triangles that can fit anywhere and large pieces that can only fit in one place, both of which are uninteresting to deal with. Finally, I’d like to improve the graphics and color choices, since they’re currently unpolished and functional “programmer art.”</p>
-            <p><a href="https://people.rit.edu/org7993/235/project3">Click here to play.</a></p>
+            <p><a href="https://people.rit.edu/org7993/235/project3" target="_blank">Click here to play.</a></p>
         </div>,
         imageList: [
             {
@@ -56,11 +63,10 @@ export default [
             },
         ]
     },
-    {
-        title: "This Site",
+    {title: "This Site",
         subtitle: "HTML - CSS - TypeScript - Node.js - Vite - React",
         thumbnail: portfolioSitePhoto1,
-        tags: "programming web",
+        tags: "programming web design",
         content: <div>
             <p>The site you're looking at now was created in preparation for the RIT Spring 2026 Career Fair. After beginning to create the site in plain HTML and CSS during Summer 2025, I put development on hiatus to focus on applying to jobs. Seeking to broaden my skillset, I took an online class to learn React over the course of about 50 hours from October 2025 to February 2026. During February 2026, I refactored my original site to use a new React-based stack, blocking out the site into reusable components.</p>
             <p>In its current state, the site features data-driven design to generate site content from JSON-style data stored in a separate file, a responsive layout that changes based on window size, and accessible light- and dark-mode palettes.</p>
@@ -76,8 +82,25 @@ export default [
             },
         ]
     },
-    {
-        title: "Direct3D 11 Renderer",
+    {title: "RIT Campus Digital Twin",
+        subtitle: "Python - C# - JavaScript - AJAX - OpenAI API - ArcGIS Pro - ArcGIS Online",
+        thumbnail: digitalTwinPhoto1,
+        tags: "programming web",
+        content: <div>
+            <p>Created a disaster resilience planning application in Unity that leverages geospatial and weather data to model how disruption of individual buildings in a physical network can affect the network as a whole. The application can also accept plain language prompts and convert them into concrete simulation parameters using the OpenAI API.</p>
+            <p>In the picture above, temperature data is pulled directly from weather.gov, and determines the buildings' color. Shapefiles containing the buildings (and connections between them) are loaded from ArcGIS Online, and the connections are colored based on their distance to designated "source" nodes.</p>
+            <p>My responsibilities varied throughout the course of the project, since each phase required notably different software, processes, and skills. These included:</p>
+            <ul>
+                <li>Synthesizing 3D geospatial datasets using Python script tools in ArcGIS Pro.</li>
+                <li>Performing research into project-relevant tools and the state of the field.</li>
+                <li>Writing Python script tools to pipeline data created in ArcGIS Pro through ArcGIS Online and into Unity.</li>
+                <li>Programming the Unity application in C#.</li>
+            </ul>
+            <p>I was the sole developer on the project, and received instruction and supervision from Brian Tomaszewski, Ph.D. and David I. Schwartz, Ph.D.</p>
+        </div>,
+        imageList: []
+    },
+    {title: "Direct3D 11 Renderer",
         subtitle: "C++ - Direct3D11 - HLSL",
         thumbnail: direct3dPhoto1,
         tags: "programming",
@@ -111,11 +134,10 @@ export default [
         
         ]
     },
-    {
-        title: "Super Intergalactic Audio Visualizer",
+    {title: "Super Intergalactic Audio Visualizer",
         subtitle: "HTML - TypeScript - Node.js - Bulma - Webpack",
         thumbnail: audioVisualizerPhoto1,
-        tags: "programming web design",
+        tags: "web design",
         content: <div>
             <p>Added EQ filters to web audio player application by interfacing with the WebAudio API. Used Canvas API to render a rotating field of stars, which react to the music. Designed clean, responsive, and modern page layout using the Bulma CSS framework.</p>
         </div>,
@@ -130,14 +152,32 @@ export default [
             },
         ]
     },
-    {
-        title: "Scratch Remix Tree Visualizer",
+    {title: "Round & Round Trip",
+        subtitle: "C# - Unity - Aseprite",
+        thumbnail: roundAndRoundTripPhoto1,
+        tags: "programming design",
+        content: <div>
+            <p>A graph theory-based game about finding the most fuel-efficient route around a series of maps. Programmed and shipped the game in 96 hours for the GMTK Game Jam 2025. Rapidly prototyped systems for player movement, map logic, and puzzle solution confirmation. Added developer tools to assist with level creation and mentored teammates on their usage. Collaborated with teammates to link UI to gameplay systems while solving merge conflicts. Illustrated 40+ location icons, 4 level maps, 2 ending screens, and a player sprite.</p>
+        </div>,
+        imageList: [
+            {
+                image: roundAndRoundTripPhoto2,
+                title: "Level 1"
+            },
+            {
+                image: roundAndRoundTripPhoto3,
+                title: "Level 3"
+            },
+        ]
+    },
+    {title: "Scratch Remix Tree Visualizer",
         subtitle: "HTML - CSS - JavaScript - AJAX",
         thumbnail: remixVisualizerPhoto1,
         tags: "programming web",
         content: <div>
             <p>MIT’s Scratch website, and the visual coding language used to create the projects shared there, was my first introduction to the practice of programming 12 years ago. It’s very important to me, and I still use it today to share short games and animations with my friends from high school. When I was given an assignment to build a browser application that interfaces with the API of another website, I decided to use the Scratch API to create a site that would be useful to me and my friends.</p>
             <p>One of Scratch’s primary features is the ability to view the code of projects written by others, and create a derivative project called a “remix” by modifying any project’s code and assets. In the previous official version of the Scratch website, Scratch 2.0, each project could be viewed in a “remix tree,” which visualized the connections between projects and their remixes in a phylogenetic tree–like diagram. This feature has become deprecated on the official site, and the visualization breaks down if looking at a long enough chain of remixes. I sought to recreate this feature using the skills I learned about the DOM and JavaScript in a way that would remain effective with large numbers of projects.</p>
+            <p><a href="/org7993/235/project2/" target="_blank">Click here to use the site.</a></p>
         </div>,
         imageList: [
             {
@@ -150,8 +190,35 @@ export default [
             },
         ]
     },
-    {
-        title: "RIT Game Developers Club Posters",
+    {title: "Arrow Ace",
+        subtitle: "C# - Unity",
+        thumbnail: arrowAcePhoto1,
+        tags: "programming",
+        content: <div>
+            <p>This is a project I made in my Interactive Media Development class, in which we learn how to use the video game engine Unity.</p>
+            <p>In Arrow Ace, you play an ace pilot/archer who wields a versatile bow that can shoot many kinds of projectiles. If you get an enemy's projectile to hits the direct center of your plane, you capture it instead of taking damage from it. The next time you hit the fire button, you'll launch that stolen projectile instead of a normal arrow.</p>
+            <p>This took me around a month to program. I also made all the art assets myself (with the exception of the fonts). I added a number of notable features that weren't required, like the ship having acceleration and slowdown times and objects having multiple hit- and hurtboxes for detecting collision types.</p>
+            <p>There are two types of enemies: One type waits until you pass in front of it before charging at you, and the other type fires spear projectiles at you. Health is handled with a health bar that depletes when you get hit. Scoring is based on enemy hits and kills, and the amount of points each individual enemy gives out can be doubled (sometimes multiple times) by hitting it in the fuselage or with a special projectile.</p>
+            <p>Controls:</p>
+            <ul>
+                <li>WASD / Arrow Keys - Move</li>
+                <li>Spacebar - Fire</li>
+                <li>R - Restart</li>
+            </ul>
+            <p><a href="https://turtle-hat.github.io/ArrowAceUnity/" target="_blank">Click here to play.</a></p>
+        </div>,
+        imageList: [
+            {
+                image: arrowAcePhoto2,
+                title: "Gameplay"
+            },
+            {
+                image: arrowAcePhoto3,
+                title: "Game Over Screen"
+            },
+        ]
+    },
+    {title: "RIT Game Developers Club Posters",
         subtitle: "Graphic Design - Character Design - Krita",
         thumbnail: rgdcPostersPhoto1,
         tags: "design",
@@ -173,8 +240,7 @@ export default [
             },
         ]
     },
-    {
-        title: "Avocado Attorney",
+    {title: "Avocado Attorney",
         subtitle: "2D visual novel game with robust developer tools for scripting cinematic sequences.",
         thumbnail: avocadoAttorneyPhoto1,
         tags: "programming design",
