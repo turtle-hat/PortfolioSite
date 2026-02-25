@@ -23,14 +23,23 @@ export default [
     },
     {
         title: "This Site",
-        subtitle: "HTML - CSS - TypeScript - Vite - React",
-        thumbnail: "img/projects/digital-twin/screenshot-1.jpg",
+        subtitle: "HTML - CSS - TypeScript - Node.js - Vite - React",
+        thumbnail: "img/projects/portfolio-site/screenshot-1.png",
         tags: "programming web",
         content: <div>
             <p>The site you're looking at now was created in preparation for the RIT Spring 2026 Career Fair. After beginning to create the site in plain HTML and CSS during Summer 2025, I put development on hiatus to focus on applying to jobs. Seeking to broaden my skillset, I took an online class to learn React over the course of about 50 hours from October 2025 to February 2026. During February 2026, I refactored my original site to use a new React-based stack, blocking out the site into reusable components.</p>
             <p>In its current state, the site features data-driven design to generate site content from JSON-style data stored in a separate file, a responsive layout that changes based on window size, and accessible light- and dark-mode palettes.</p>
         </div>,
-        imageList: []
+        imageList: [
+            {
+                image: "img/projects/portfolio-site/screenshot-2.png",
+                title: "Tablet layout"
+            },
+            {
+                image: "img/projects/portfolio-site/screenshot-3.png",
+                title: "Mobile layout"
+            },
+        ]
     },
     {
         title: "Direct3D 11 Renderer",
@@ -65,6 +74,45 @@ export default [
                 title: "Blue noise dithering shader"
             },
         
+        ]
+    },
+    {
+        title: "Super Intergalactic Audio Visualizer",
+        subtitle: "HTML - TypeScript - Node.js - Bulma - Webpack",
+        thumbnail: "img/projects/audio-visualizer/screenshot-1.jpg",
+        tags: "programming web design",
+        content: <div>
+            <p>Added EQ filters to web audio player application by interfacing with the WebAudio API. Used Canvas API to render a rotating field of stars, which react to the music. Designed clean, responsive, and modern page layout using the Bulma CSS framework.</p>
+        </div>,
+        imageList: [
+            {
+                image: "img/projects/audio-visualizer/screenshot-2.jpg",
+                title: "Tablet Layout"
+            },
+            {
+                image: "img/projects/audio-visualizer/screenshot-3.jpg",
+                title: "Mobile Layout"
+            },
+        ]
+    },
+    {
+        title: "Scratch Remix Tree Visualizer",
+        subtitle: "HTML - CSS - JavaScript - AJAX",
+        thumbnail: "img/projects/remix-visualizer/screenshot-1.jpg",
+        tags: "programming web",
+        content: <div>
+            <p>MIT’s Scratch website, and the visual coding language used to create the projects shared there, was my first introduction to the practice of programming 12 years ago. It’s very important to me, and I still use it today to share short games and animations with my friends from high school. When I was given an assignment to build a browser application that interfaces with the API of another website, I decided to use the Scratch API to create a site that would be useful to me and my friends.</p>
+            <p>One of Scratch’s primary features is the ability to view the code of projects written by others, and create a derivative project called a “remix” by modifying any project’s code and assets. In the previous official version of the Scratch website, Scratch 2.0, each project could be viewed in a “remix tree,” which visualized the connections between projects and their remixes in a phylogenetic tree–like diagram. This feature has become deprecated on the official site, and the visualization breaks down if looking at a long enough chain of remixes. I sought to recreate this feature using the skills I learned about the DOM and JavaScript in a way that would remain effective with large numbers of projects.</p>
+        </div>,
+        imageList: [
+            {
+                image: "img/projects/remix-visualizer/screenshot-2.jpg",
+                title: "Parameter tooltips"
+            },
+            {
+                image: "img/projects/remix-visualizer/screenshot-3.jpg",
+                title: "Project info on hover"
+            },
         ]
     },
     {
