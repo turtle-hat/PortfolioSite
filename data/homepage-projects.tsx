@@ -1,52 +1,11 @@
 export default [
     {
-        title: "Avocado Attorney",
-        subtitle: "Subtitle Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, velit.",
-        thumbnail: "/img/homepage/gallery-cards/avocado-attorney.png",
-        tags: "programming",
-        content: <div>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi ea, dolores molestiae sunt veritatis velit similique, incidunt minus illum optio repudiandae voluptatum debitis non perferendis dolor ducimus corrupti explicabo, unde iusto dolorum esse reprehenderit asperiores impedit! Commodi, doloribus veritatis mollitia consequatur atque modi, nulla rem eaque nemo earum numquam culpa quasi quisquam repellat, suscipit molestiae incidunt inventore. Non cupiditate blanditiis corrupti quod, culpa nam deserunt quis architecto, tempore quia delectus quo! Excepturi ratione impedit voluptatum sit. Sit rerum molestiae a maiores dignissimos! Consequatur cum dolore at ipsum accusamus reprehenderit magni, animi vel, et esse blanditiis quae consectetur sapiente iusto ea.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ducimus alias distinctio itaque. Enim excepturi quidem exercitationem porro quia quibusdam voluptas molestias repudiandae aperiam est, iusto temporibus, deleniti reiciendis blanditiis doloribus? Magni blanditiis pariatur rerum ipsam eaque perferendis enim velit! Iste fuga, voluptas sed laudantium, natus magni quos nihil saepe aliquid beatae, voluptatum ex repellendus laboriosam architecto nemo id quam eligendi excepturi illum. Possimus eligendi vero, natus ullam, eaque deleniti, dolore delectus quisquam illum praesentium nam iure. Ab esse ullam blanditiis necessitatibus consectetur? Veritatis minus aut libero odit reprehenderit quibusdam! Suscipit labore sed, dolor iste beatae natus officia possimus impedit, at eos omnis animi magni dicta. Alias, architecto neque! Cumque est reiciendis architecto, accusamus expedita quo rerum unde nulla voluptatum.</p>
-            <ul>
-                <li>fact 1</li>
-                <li>fact 2</li>
-                <li>fact 3</li>
-            </ul>
-        </div>,
-        imageList: [
-            {
-                image: "img/projects/avocado-attorney/screenshot1.png",
-                title: "Cross-examination interface",
-                content: <div>
-                    <p>Hello World!</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam enim distinctio architecto quos optio accusamus voluptates! Dolorum qui fuga eaque magni aliquid omnis blanditiis dolorem animi praesentium accusantium veritatis sed commodi, voluptates impedit voluptate, deleniti soluta quas accusamus vero. Numquam facilis itaque expedita nam, recusandae odit tenetur enim exercitationem quam doloribus aliquid perspiciatis iusto atque explicabo sunt culpa natus, perferendis quis quaerat veritatis delectus porro blanditiis sit dolorem. Repellendus omnis nostrum voluptatum quos ipsa, aliquam dolorum, explicabo excepturi enim doloribus magnam debitis maxime est amet ratione quia pariatur a? Fugit deleniti et aspernatur, ab dicta incidunt facilis quidem perferendis nemo.</p>
-                </div>
-            },
-            {
-                image: "img/projects/avocado-attorney/screenshot2.png",
-                title: "Inventory interface",
-                content: <div>
-                    <p>Goodbye World!</p>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas eveniet animi aspernatur sed dolore voluptatibus officiis porro atque dicta eum et quidem aliquid ratione amet adipisci error dolorum maiores optio non velit, quibusdam autem debitis. Distinctio deserunt reiciendis, in amet consectetur possimus vitae, assumenda, molestias quos provident aliquid. Nihil at placeat totam a repellat itaque, earum quasi corporis, eveniet, temporibus omnis cum. Dolore adipisci quis dolorum vero aut architecto quibusdam, modi veniam aspernatur sint! Ad, perferendis odit. Dicta distinctio reiciendis totam architecto optio quod molestiae laudantium corporis temporibus? Voluptate repudiandae soluta voluptates hic minima deleniti ullam temporibus adipisci incidunt provident?</p>
-                </div>
-            },
-            {
-                image: "img/projects/avocado-attorney/screenshot3.png",
-                title: "Dialogue option interface",
-                content: <div>
-                    <p>Get Outta Here World!</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci similique aut corrupti deleniti eaque ipsa vel sint. Repellendus, iure eaque doloribus delectus dolor quasi error nulla et. Dolore quis explicabo illum. Ut necessitatibus amet esse odit eius consectetur dolor nam inventore. Eos impedit veniam non natus. Veritatis similique inventore consectetur animi, quidem modi illo pariatur, tenetur, soluta deleniti iusto temporibus. Facilis, commodi aliquid provident harum perferendis, voluptatum nisi ab voluptate facere possimus, vero aut deserunt delectus blanditiis saepe. Hic non quae laboriosam repudiandae! Fugit hic aliquam, exercitationem quo similique, voluptatem dolores ex officiis architecto voluptatibus eos a quas quia totam?</p>
-                </div>
-            }
-        ]
-    },
-    {
         title: "RIT Campus Digital Twin",
         subtitle: "GIS & Programming",
         thumbnail: "/img/homepage/gallery-cards/rit-campus-digital-twin.png",
-        tags: "programming gis",
+        tags: "programming",
         content: <div>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi ea, dolores molestiae sunt veritatis velit similique, incidunt minus illum optio repudiandae voluptatum debitis non perferendis dolor ducimus corrupti explicabo, unde iusto dolorum esse reprehenderit asperiores impedit! Commodi, doloribus veritatis mollitia consequatur atque modi, nulla rem eaque nemo earum numquam culpa quasi quisquam repellat, suscipit molestiae incidunt inventore. Non cupiditate blanditiis corrupti quod, culpa nam deserunt quis architecto, tempore quia delectus quo! Excepturi ratione impedit voluptatum sit. Sit rerum molestiae a maiores dignissimos! Consequatur cum dolore at ipsum accusamus reprehenderit magni, animi vel, et esse blanditiis quae consectetur sapiente iusto ea.</p>
+            <p>TODO</p>
         </div>,
         imageList: []
     },
@@ -56,18 +15,62 @@ export default [
         thumbnail: "/img/homepage/gallery-cards/direct3d-11-renderer.png",
         tags: "programming",
         content: <div>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi ea, dolores molestiae sunt veritatis velit similique, incidunt minus illum optio repudiandae voluptatum debitis non perferendis dolor ducimus corrupti explicabo, unde iusto dolorum esse reprehenderit asperiores impedit! Commodi, doloribus veritatis mollitia consequatur atque modi, nulla rem eaque nemo earum numquam culpa quasi quisquam repellat, suscipit molestiae incidunt inventore. Non cupiditate blanditiis corrupti quod, culpa nam deserunt quis architecto, tempore quia delectus quo! Excepturi ratione impedit voluptatum sit. Sit rerum molestiae a maiores dignissimos! Consequatur cum dolore at ipsum accusamus reprehenderit magni, animi vel, et esse blanditiis quae consectetur sapiente iusto ea.</p>
+            <p>TODO</p>
         </div>,
         imageList: []
     },
     {
         title: "RIT Game Developers Club Posters",
-        subtitle: "Design",
-        thumbnail: "/img/homepage/gallery-cards/rit-game-dev-club-posters.png",
+        subtitle: "Graphic Design and Character Design. Illustrated in Krita.",
+        thumbnail: "img/projects/rgdc-posters/jamster-ref-sheet.jpg",
         tags: "design",
         content: <div>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi ea, dolores molestiae sunt veritatis velit similique, incidunt minus illum optio repudiandae voluptatum debitis non perferendis dolor ducimus corrupti explicabo, unde iusto dolorum esse reprehenderit asperiores impedit! Commodi, doloribus veritatis mollitia consequatur atque modi, nulla rem eaque nemo earum numquam culpa quasi quisquam repellat, suscipit molestiae incidunt inventore. Non cupiditate blanditiis corrupti quod, culpa nam deserunt quis architecto, tempore quia delectus quo! Excepturi ratione impedit voluptatum sit. Sit rerum molestiae a maiores dignissimos! Consequatur cum dolore at ipsum accusamus reprehenderit magni, animi vel, et esse blanditiis quae consectetur sapiente iusto ea.</p>
+            <p>As Vice President of the RIT Game Developers Club, advertised club events by designing promotional posters with a consistent brand identity. Designed a mascot character, Jamster, to use in club promotional materials. Coordinated and organized weekend-long game jams each semester, including preparing slideshows and overseeing event operations.</p>
         </div>,
-        imageList: []
-    }
+        imageList: [
+            {
+                image: "img/projects/rgdc-posters/poster-1.jpg",
+                title: "Fall 2024-Spring 2025 General Club Poster"
+            },
+            {
+                image: "img/projects/rgdc-posters/poster-2.jpg",
+                title: "Halloween 2024 Game Jam Poster"
+            },
+            {
+                image: "img/projects/rgdc-posters/poster-3.jpg",
+                title: "Spring 2025 Game Jam Poster"
+            },
+        ]
+    },
+    {
+        title: "Avocado Attorney",
+        subtitle: "2D visual novel game with robust developer tools for scripting cinematic sequences.",
+        thumbnail: "img/projects/avocado-attorney/screenshot-1.png",
+        tags: "programming design",
+        content: <div>
+            <p>A lighthearted, cartoonish courtroom visual novel game based on the Ace Attorney series, with a variety of custom systems for managing all aspects of gameplay and the user interface, including:</p>
+            <ul>
+                <li>2D character animations.</li>
+                <li>Input polling with keyboard and touchscreen support.</li>
+                <li>Text display with format markup, soft wrapping, and inline commands for signalling cinematic events.</li>
+                <li>Vertically layered soundtrack coordination.</li>
+                <li>User interface with animations.</li>
+                <li>Visual effects.</li>
+                <li>2D camera motions.</li>
+                <li>Nonlinear scene flow control.</li>
+            </ul>
+            <p>Development has been ongoing since 2022, when free time allows. Currently, I am in the process of illustrating final art assets, including backgrounds, character animations, and interface elements. I have also hired a composer to write the game's original soundtrack and regularly coordinate with him to ensure it fits the desired tone for various story beats.</p>
+            <p>Avocado Attorney is an open source project programmed in the block-based programming language Scratch using the TurboWarp IDE, with well-documented code systems designed to allow non-programmers to engage in communal storytelling by scripting their own game sequences in my custom engine and sharing their creations online.</p>
+        </div>,
+        imageList: [
+            {
+                image: "img/projects/avocado-attorney/screenshot-2.png",
+                title: "Inventory interface"
+            },
+            {
+                image: "img/projects/avocado-attorney/screenshot-3.png",
+                title: "Dialogue option interface"
+            },
+        ]
+    },
 ]

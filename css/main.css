@@ -14,15 +14,15 @@ html {
   --background-darker:        #030314;
   --accent-home:              #1223db;
   --accent-programming:       #007c92;
-  --accent-gis:               #3a8505;
+  --accent-web:               #3a8505;
   --accent-design:            #996412;
   --accent-home-dark:         #040f81;
   --accent-programming-dark:  #005161;
-  --accent-gis-dark:          #296500;
+  --accent-web-dark:          #296500;
   --accent-design-dark:       #6f4b10;
   --accent-home-light:        #8f98ff;
   --accent-programming-light: #82d6e6;
-  --accent-gis-light:         #a5dd7a;
+  --accent-web-light:         #a5dd7a;
   --accent-design-light:      #eebf73;
 
   background-color: light-dark(var(--background-light), var(--background-darker));
@@ -50,7 +50,7 @@ footer {
 
 footer             { background-image: linear-gradient(to bottom right, var(--accent-home), var(--accent-home-dark)); }
 footer.programming { background-image: linear-gradient(to bottom right, var(--accent-programming), var(--accent-programming-dark)); }
-footer.gis         { background-image: linear-gradient(to bottom right, var(--accent-gis), var(--accent-gis-dark)); }
+footer.web         { background-image: linear-gradient(to bottom right, var(--accent-web), var(--accent-web-dark)); }
 footer.design      { background-image: linear-gradient(to bottom right, var(--accent-design), var(--accent-design-dark)); }
 
 main>p {
@@ -126,13 +126,13 @@ a.nav-programming:focus {
   outline-color: var(--accent-programming);
 }
 
-a.nav-gis { border-color: light-dark(var(--accent-gis-dark), var(--accent-gis-light)); }
-a.nav-gis p { color: light-dark(var(--accent-gis-dark), var(--accent-gis-light)); }
-a.nav-gis:hover,
-a.nav-gis:focus {
-  background-color: var(--accent-gis-dark);
-  border-color: var(--accent-gis);
-  outline-color: var(--accent-gis);
+a.nav-web { border-color: light-dark(var(--accent-web-dark), var(--accent-web-light)); }
+a.nav-web p { color: light-dark(var(--accent-web-dark), var(--accent-web-light)); }
+a.nav-web:hover,
+a.nav-web:focus {
+  background-color: var(--accent-web-dark);
+  border-color: var(--accent-web);
+  outline-color: var(--accent-web);
 }
 
 a.nav-design { border-color: light-dark(var(--accent-design-dark), var(--accent-design-light)); }
@@ -176,7 +176,7 @@ a.nav-design:focus {
 
 .hero             { background-image: linear-gradient(to top right, var(--accent-home), var(--accent-home-dark)); }
 .hero.programming { background-image: linear-gradient(to top right, var(--accent-programming), var(--accent-programming-dark)); }
-.hero.gis         { background-image: linear-gradient(to top right, var(--accent-gis), var(--accent-gis-dark)); }
+.hero.web         { background-image: linear-gradient(to top right, var(--accent-web), var(--accent-web-dark)); }
 .hero.design      { background-image: linear-gradient(to top right, var(--accent-design), var(--accent-design-dark)); }
 
 .hero-text {
@@ -331,7 +331,7 @@ a.nav-design:focus {
 }
 
 .gallery-item.programming:focus-within { outline-color: var(--accent-programming); }
-.gallery-item.gis:focus-within { outline-color: var(--accent-gis); }
+.gallery-item.web:focus-within { outline-color: var(--accent-web); }
 .gallery-item.design:focus-within { outline-color: var(--accent-design); }
 
 @media (max-width: 1080px) {
@@ -472,12 +472,12 @@ a.nav-design:focus {
 }
 
 .image-list-item {
-  height: 200px;
+  height: 300px;
 }
 
 @media (max-width: 1080px) {
   .image-list-item {
-    height: 150px;
+    height: 200px;
   }
 }
 

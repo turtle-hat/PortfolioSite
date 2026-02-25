@@ -14,7 +14,6 @@ export default function ImageList( { data }  : ImageListProps) {
             key={nanoid()}
             image={imageData.image}
             title={imageData.title}
-            content={imageData.content}
         />
     );
     
