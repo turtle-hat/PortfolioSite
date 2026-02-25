@@ -1,8 +1,43 @@
+import audioVisualizerPhoto1 from "../img/projects/audio-visualizer/screenshot-1.jpg";
+import audioVisualizerPhoto2 from "../img/projects/audio-visualizer/screenshot-2.jpg";
+import audioVisualizerPhoto3 from "../img/projects/audio-visualizer/screenshot-3.jpg";
+
+import avocadoAttorneyPhoto1 from "../img/projects/avocado-attorney/screenshot-1.png";
+import avocadoAttorneyPhoto2 from "../img/projects/avocado-attorney/screenshot-2.png";
+import avocadoAttorneyPhoto3 from "../img/projects/avocado-attorney/screenshot-3.png";
+
+// import digitalTwinPhoto1 from "../img/projects/digital-twin/screenshot-1.jpg";
+
+import direct3dPhoto1 from "../img/projects/direct3d-11-renderer/screenshot-1.jpg";
+import direct3dPhoto2 from "../img/projects/direct3d-11-renderer/screenshot-2.jpg";
+import direct3dPhoto3 from "../img/projects/direct3d-11-renderer/screenshot-3.jpg";
+import direct3dPhoto4 from "../img/projects/direct3d-11-renderer/screenshot-4.png";
+
+import portfolioSitePhoto1 from "../img/projects/portfolio-site/screenshot-1.png";
+import portfolioSitePhoto2 from "../img/projects/portfolio-site/screenshot-2.png";
+import portfolioSitePhoto3 from "../img/projects/portfolio-site/screenshot-3.png";
+
+import remixVisualizerPhoto1 from "../img/projects/remix-visualizer/screenshot-1.jpg";
+import remixVisualizerPhoto2 from "../img/projects/remix-visualizer/screenshot-2.jpg";
+import remixVisualizerPhoto3 from "../img/projects/remix-visualizer/screenshot-3.jpg";
+
+import rgdcPostersPhoto1 from "../img/projects/rgdc-posters/jamster-ref-sheet.jpg";
+import rgdcPostersPhoto2 from "../img/projects/rgdc-posters/poster-1.jpg";
+import rgdcPostersPhoto3 from "../img/projects/rgdc-posters/poster-2.jpg";
+import rgdcPostersPhoto4 from "../img/projects/rgdc-posters/poster-3.jpg";
+
+import tangramsPhoto1 from "../img/projects/tangrams/screenshot-1.jpg";
+import tangramsPhoto2 from "../img/projects/tangrams/screenshot-2.jpg";
+import tangramsPhoto3 from "../img/projects/tangrams/screenshot-3.jpg";
+
+
+
+
 export default [
     {
         title: "Ten Grams of Tangrams",
         subtitle: "HTML - CSS - JavaScript - PixiJS",
-        thumbnail: "img/projects/tangrams/screenshot-1.jpg",
+        thumbnail: tangramsPhoto1,
         tags: "programming web design",
         content: <div>
             <p>For the final project in my Intro to Game Web Technology course during Fall 2022, I needed to design and program a video game to run in a web browser. As a kid, I used to play with a set of plastic puzzle pieces called tangrams, which includes a number of specific triangles and quadrilaterals. I brainstormed off from that idea and decided on a design for a puzzle game that tasks the player with fitting a set of angular pieces snugly into a board, much like a jigsaw puzzle.</p>
@@ -12,11 +47,11 @@ export default [
         </div>,
         imageList: [
             {
-                image: "img/projects/tangrams/screenshot-2.jpg",
+                image: tangramsPhoto2,
                 title: "Partially filled board"
             },
             {
-                image: "img/projects/tangrams/screenshot-3.jpg",
+                image: tangramsPhoto3,
                 title: "Win screen"
             },
         ]
@@ -24,7 +59,7 @@ export default [
     {
         title: "This Site",
         subtitle: "HTML - CSS - TypeScript - Node.js - Vite - React",
-        thumbnail: "img/projects/portfolio-site/screenshot-1.png",
+        thumbnail: portfolioSitePhoto1,
         tags: "programming web",
         content: <div>
             <p>The site you're looking at now was created in preparation for the RIT Spring 2026 Career Fair. After beginning to create the site in plain HTML and CSS during Summer 2025, I put development on hiatus to focus on applying to jobs. Seeking to broaden my skillset, I took an online class to learn React over the course of about 50 hours from October 2025 to February 2026. During February 2026, I refactored my original site to use a new React-based stack, blocking out the site into reusable components.</p>
@@ -32,11 +67,11 @@ export default [
         </div>,
         imageList: [
             {
-                image: "img/projects/portfolio-site/screenshot-2.png",
+                image: portfolioSitePhoto2,
                 title: "Tablet layout"
             },
             {
-                image: "img/projects/portfolio-site/screenshot-3.png",
+                image: portfolioSitePhoto3,
                 title: "Mobile layout"
             },
         ]
@@ -44,7 +79,7 @@ export default [
     {
         title: "Direct3D 11 Renderer",
         subtitle: "C++ - Direct3D11 - HLSL",
-        thumbnail: "img/projects/direct3d-11-renderer/screenshot-1.jpg",
+        thumbnail: direct3dPhoto1,
         tags: "programming",
         content: <div>
             <p>Rendering application to display 3D models, written during two classes over the course of two semesters. Features include:</p>
@@ -61,16 +96,16 @@ export default [
         </div>,
         imageList: [
             {
-                image: "img/projects/direct3d-11-renderer/screenshot-3.jpg",
+                image: direct3dPhoto3,
                 title: "Foliage mesh generation parameters"
             },
         
             {
-                image: "img/projects/direct3d-11-renderer/screenshot-4.png",
+                image: direct3dPhoto4,
                 title: "Particle emitters and shadows"
             },
             {
-                image: "img/projects/direct3d-11-renderer/screenshot-2.jpg",
+                image: direct3dPhoto2,
                 title: "Blue noise dithering shader"
             },
         
@@ -79,18 +114,18 @@ export default [
     {
         title: "Super Intergalactic Audio Visualizer",
         subtitle: "HTML - TypeScript - Node.js - Bulma - Webpack",
-        thumbnail: "img/projects/audio-visualizer/screenshot-1.jpg",
+        thumbnail: audioVisualizerPhoto1,
         tags: "programming web design",
         content: <div>
             <p>Added EQ filters to web audio player application by interfacing with the WebAudio API. Used Canvas API to render a rotating field of stars, which react to the music. Designed clean, responsive, and modern page layout using the Bulma CSS framework.</p>
         </div>,
         imageList: [
             {
-                image: "img/projects/audio-visualizer/screenshot-2.jpg",
+                image: audioVisualizerPhoto2,
                 title: "Tablet Layout"
             },
             {
-                image: "img/projects/audio-visualizer/screenshot-3.jpg",
+                image: audioVisualizerPhoto3,
                 title: "Mobile Layout"
             },
         ]
@@ -98,7 +133,7 @@ export default [
     {
         title: "Scratch Remix Tree Visualizer",
         subtitle: "HTML - CSS - JavaScript - AJAX",
-        thumbnail: "img/projects/remix-visualizer/screenshot-1.jpg",
+        thumbnail: remixVisualizerPhoto1,
         tags: "programming web",
         content: <div>
             <p>MIT’s Scratch website, and the visual coding language used to create the projects shared there, was my first introduction to the practice of programming 12 years ago. It’s very important to me, and I still use it today to share short games and animations with my friends from high school. When I was given an assignment to build a browser application that interfaces with the API of another website, I decided to use the Scratch API to create a site that would be useful to me and my friends.</p>
@@ -106,11 +141,11 @@ export default [
         </div>,
         imageList: [
             {
-                image: "img/projects/remix-visualizer/screenshot-2.jpg",
+                image: remixVisualizerPhoto2,
                 title: "Parameter tooltips"
             },
             {
-                image: "img/projects/remix-visualizer/screenshot-3.jpg",
+                image: remixVisualizerPhoto3,
                 title: "Project info on hover"
             },
         ]
@@ -118,22 +153,22 @@ export default [
     {
         title: "RIT Game Developers Club Posters",
         subtitle: "Graphic Design - Character Design - Krita",
-        thumbnail: "img/projects/rgdc-posters/jamster-ref-sheet.jpg",
+        thumbnail: rgdcPostersPhoto1,
         tags: "design",
         content: <div>
             <p>As Vice President of the RIT Game Developers Club, advertised club events by designing promotional posters with a consistent brand identity. Designed a mascot character, Jamster, to use in club promotional materials. Coordinated and organized weekend-long game jams each semester, including preparing slideshows and overseeing event operations.</p>
         </div>,
         imageList: [
             {
-                image: "img/projects/rgdc-posters/poster-1.jpg",
+                image: rgdcPostersPhoto2,
                 title: "Fall 2024-Spring 2025 General Club Poster"
             },
             {
-                image: "img/projects/rgdc-posters/poster-2.jpg",
+                image: rgdcPostersPhoto3,
                 title: "Halloween 2024 Game Jam Poster"
             },
             {
-                image: "img/projects/rgdc-posters/poster-3.jpg",
+                image: rgdcPostersPhoto4,
                 title: "Spring 2025 Game Jam Poster"
             },
         ]
@@ -141,7 +176,7 @@ export default [
     {
         title: "Avocado Attorney",
         subtitle: "2D visual novel game with robust developer tools for scripting cinematic sequences.",
-        thumbnail: "img/projects/avocado-attorney/screenshot-1.png",
+        thumbnail: avocadoAttorneyPhoto1,
         tags: "programming design",
         content: <div>
             <p>A lighthearted, cartoonish courtroom visual novel game based on the Ace Attorney series, with a variety of custom systems for managing all aspects of gameplay and the user interface, including:</p>
@@ -160,11 +195,11 @@ export default [
         </div>,
         imageList: [
             {
-                image: "img/projects/avocado-attorney/screenshot-2.png",
+                image: avocadoAttorneyPhoto2,
                 title: "Inventory interface"
             },
             {
-                image: "img/projects/avocado-attorney/screenshot-3.png",
+                image: avocadoAttorneyPhoto3,
                 title: "Dialogue option interface"
             },
         ]
