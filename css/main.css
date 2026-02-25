@@ -181,6 +181,7 @@ a.nav-design:focus {
 
 .hero-text {
   width: max-content;
+  max-width: 90vw;
   text-align: left;
 
   margin: 0px 2em;
@@ -473,6 +474,7 @@ a.nav-design:focus {
 
 .image-list-item {
   height: 300px;
+  box-shadow: 0 5px 10px light-dark(var(--background-light), var(--background-darker));
 }
 
 @media (max-width: 1080px) {
