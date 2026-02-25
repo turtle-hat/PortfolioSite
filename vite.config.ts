@@ -4,13 +4,14 @@ import { resolve } from 'path'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: "https://people.rit.edu/org7993/",
   build: {
     rollupOptions: {
       input: {
-        main: resolve(__dirname, 'src/index.html'),
-        programming: resolve(__dirname, 'src/programming.html'),
-        web: resolve(__dirname, 'src/web.html'),
-        design: resolve(__dirname, 'src/design.html'),
+        main: resolve(__dirname, 'index.html'),
+        programming: resolve(__dirname, 'programming.html'),
+        web: resolve(__dirname, 'web.html'),
+        design: resolve(__dirname, 'design.html'),
       }
     }
   },
