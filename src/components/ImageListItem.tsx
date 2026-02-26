@@ -7,5 +7,8 @@ export type ImageListItemProps = {
 }
 
 export default function ImageListItem({ image, title } : ImageListItemProps) {
-    return <img className="image-list-item" src={image} alt={title} title={title}/>;
+    return <figure className="image-list-item">
+        <img src={image} alt={title}/>
+        <figcaption>{title}</figcaption>
+    </figure>;
 }
