@@ -1,42 +1,51 @@
-import audioVisualizerPhoto1 from "../img/projects/audio-visualizer/screenshot-1.jpg";
-import audioVisualizerPhoto2 from "../img/projects/audio-visualizer/screenshot-2.jpg";
-import audioVisualizerPhoto3 from "../img/projects/audio-visualizer/screenshot-3.jpg";
+import audioVisualizerThumb from "../img/projects/audio-visualizer/thumb.jpeg";
+import audioVisualizer1 from "../img/projects/audio-visualizer/1.jpeg";
+import audioVisualizer2 from "../img/projects/audio-visualizer/2.jpeg";
 
-import arrowAcePhoto1 from "../img/projects/arrow-ace/screenshot-1.jpg";
-import arrowAcePhoto2 from "../img/projects/arrow-ace/screenshot-2.jpg";
-import arrowAcePhoto3 from "../img/projects/arrow-ace/screenshot-3.jpg";
+import arrowAceThumb from "../img/projects/arrow-ace/thumb.png";
+import arrowAce1 from "../img/projects/arrow-ace/1.jpeg";
+import arrowAce2 from "../img/projects/arrow-ace/2.jpeg";
+import arrowAce3 from "../img/projects/arrow-ace/3.jpeg";
 
-import avocadoAttorneyPhoto1 from "../img/projects/avocado-attorney/screenshot-1.png";
-import avocadoAttorneyPhoto2 from "../img/projects/avocado-attorney/screenshot-2.png";
-import avocadoAttorneyPhoto3 from "../img/projects/avocado-attorney/screenshot-3.png";
+import avocadoAttorneyThumb from "../img/projects/avocado-attorney/thumb.png";
+import avocadoAttorney1 from "../img/projects/avocado-attorney/1.jpeg";
+import avocadoAttorney2 from "../img/projects/avocado-attorney/2.jpeg";
+import avocadoAttorney3 from "../img/projects/avocado-attorney/3.jpeg";
 
-import digitalTwinPhoto1 from "../img/projects/digital-twin/screenshot-1.jpg";
+import digitalTwinThumb from "../img/projects/digital-twin/thumb.jpeg";
+import digitalTwin1 from "../img/projects/digital-twin/1.jpeg";
+import digitalTwin2 from "../img/projects/digital-twin/2.jpeg";
+import digitalTwin3 from "../img/projects/digital-twin/3.jpeg";
+import digitalTwin4 from "../img/projects/digital-twin/4.jpeg";
 
-import direct3dPhoto1 from "../img/projects/direct3d-11-renderer/screenshot-1.jpg";
-import direct3dPhoto2 from "../img/projects/direct3d-11-renderer/screenshot-2.jpg";
-import direct3dPhoto3 from "../img/projects/direct3d-11-renderer/screenshot-3.jpg";
-import direct3dPhoto4 from "../img/projects/direct3d-11-renderer/screenshot-4.png";
+import direct3dThumb from "../img/projects/direct3d-11-renderer/thumb.jpeg";
+import direct3d1 from "../img/projects/direct3d-11-renderer/1.jpeg";
+import direct3d2 from "../img/projects/direct3d-11-renderer/2.jpeg";
+import direct3d3 from "../img/projects/direct3d-11-renderer/3.jpeg";
 
-import portfolioSitePhoto1 from "../img/projects/portfolio-site/screenshot-1.png";
-import portfolioSitePhoto2 from "../img/projects/portfolio-site/screenshot-2.png";
-import portfolioSitePhoto3 from "../img/projects/portfolio-site/screenshot-3.png";
+import portfolioSiteThumb from "../img/projects/portfolio-site/thumb.jpeg";
+import portfolioSite1 from "../img/projects/portfolio-site/1.jpeg";
+import portfolioSite2 from "../img/projects/portfolio-site/2.jpeg";
+import portfolioSite3 from "../img/projects/portfolio-site/3.jpeg";
+import portfolioSite4 from "../img/projects/portfolio-site/4.jpeg";
 
-import remixVisualizerPhoto1 from "../img/projects/remix-visualizer/screenshot-1.jpg";
-import remixVisualizerPhoto2 from "../img/projects/remix-visualizer/screenshot-2.jpg";
-import remixVisualizerPhoto3 from "../img/projects/remix-visualizer/screenshot-3.jpg";
+import remixVisualizerThumb from "../img/projects/remix-visualizer/thumb.jpeg";
+import remixVisualizer1 from "../img/projects/remix-visualizer/1.jpeg";
+import remixVisualizer2 from "../img/projects/remix-visualizer/2.jpeg";
 
-import rgdcPostersPhoto1 from "../img/projects/rgdc-posters/jamster-ref-sheet.jpg";
-import rgdcPostersPhoto2 from "../img/projects/rgdc-posters/poster-1.jpg";
-import rgdcPostersPhoto3 from "../img/projects/rgdc-posters/poster-2.jpg";
-import rgdcPostersPhoto4 from "../img/projects/rgdc-posters/poster-3.jpg";
+import rgdcPostersThumb from "../img/projects/rgdc-posters/thumb.jpeg";
+import rgdcPosters1 from "../img/projects/rgdc-posters/1.jpeg";
+import rgdcPosters2 from "../img/projects/rgdc-posters/2.jpeg";
+import rgdcPosters3 from "../img/projects/rgdc-posters/3.jpeg";
 
-import roundAndRoundTripPhoto1 from "../img/projects/round-and-round-trip/screenshot-1.png";
-import roundAndRoundTripPhoto2 from "../img/projects/round-and-round-trip/screenshot-2.jpg";
-import roundAndRoundTripPhoto3 from "../img/projects/round-and-round-trip/screenshot-3.jpg";
+import roundAndRoundTripThumb from "../img/projects/round-and-round-trip/thumb.png";
+import roundAndRoundTrip1 from "../img/projects/round-and-round-trip/1.jpeg";
+import roundAndRoundTrip2 from "../img/projects/round-and-round-trip/2.jpeg";
 
-import tangramsPhoto1 from "../img/projects/tangrams/screenshot-1.jpg";
-import tangramsPhoto2 from "../img/projects/tangrams/screenshot-2.jpg";
-import tangramsPhoto3 from "../img/projects/tangrams/screenshot-3.jpg";
+import tangramsThumb from "../img/projects/tangrams/thumb.jpeg";
+import tangrams1 from "../img/projects/tangrams/1.jpeg";
+import tangrams2 from "../img/projects/tangrams/2.jpeg";
+import tangrams3 from "../img/projects/tangrams/3.jpeg";
 
 
 
@@ -44,7 +53,7 @@ import tangramsPhoto3 from "../img/projects/tangrams/screenshot-3.jpg";
 export default [
     {title: "Ten Grams of Tangrams",
         subtitle: "HTML - CSS - JavaScript - PixiJS",
-        thumbnail: tangramsPhoto1,
+        thumbnail: tangramsThumb,
         tags: "programming web design",
         content: <div>
             <p>For the final project in my Intro to Game Web Technology course during Fall 2022, I needed to design and program a video game to run in a web browser. As a kid, I used to play with a set of plastic puzzle pieces called tangrams, which includes a number of specific triangles and quadrilaterals. I brainstormed off from that idea and decided on a design for a puzzle game that tasks the player with fitting a set of angular pieces snugly into a board, much like a jigsaw puzzle.</p>
@@ -54,18 +63,22 @@ export default [
         </div>,
         imageList: [
             {
-                image: tangramsPhoto2,
+                image: tangrams1,
+                title: "Starting state"
+            },
+            {
+                image: tangrams2,
                 title: "Partially filled board"
             },
             {
-                image: tangramsPhoto3,
+                image: tangrams3,
                 title: "Win screen"
             },
         ]
     },
     {title: "This Site",
-        subtitle: "HTML - CSS - TypeScript - Node.js - Vite - React",
-        thumbnail: portfolioSitePhoto1,
+        subtitle: "TypeScript - React - Node.js - Vite - HTML - CSS",
+        thumbnail: portfolioSiteThumb,
         tags: "programming web design",
         content: <div>
             <p>The site you're looking at now was created in preparation for the RIT Spring 2026 Career Fair. After beginning to create the site in plain HTML and CSS during Summer 2025, I put development on hiatus to focus on applying to jobs. Seeking to broaden my skillset, I took an online class to learn React over the course of about 50 hours from October 2025 to February 2026. During February 2026, I refactored my original site to use a new React-based stack, blocking out the site into reusable components.</p>
@@ -73,18 +86,26 @@ export default [
         </div>,
         imageList: [
             {
-                image: portfolioSitePhoto2,
+                image: portfolioSite1,
                 title: "Tablet layout"
             },
             {
-                image: portfolioSitePhoto3,
+                image: portfolioSite2,
                 title: "Mobile layout"
+            },
+            {
+                image: portfolioSite3,
+                title: "Hero and navbar"
+            },
+            {
+                image: portfolioSite4,
+                title: "Dark mode and picture masonry layout"
             },
         ]
     },
     {title: "RIT Campus Digital Twin",
         subtitle: "Python - C# - JavaScript - AJAX - OpenAI API - ArcGIS Pro - ArcGIS Online",
-        thumbnail: digitalTwinPhoto1,
+        thumbnail: digitalTwinThumb,
         tags: "programming web",
         content: <div>
             <p>Created a disaster resilience planning application in Unity that leverages geospatial and weather data to model how disruption of individual buildings in a physical network can affect the network as a whole. The application can also accept plain language prompts and convert them into concrete simulation parameters using the OpenAI API.</p>
@@ -98,11 +119,28 @@ export default [
             </ul>
             <p>I was the sole developer on the project, and received instruction and supervision from Brian Tomaszewski, Ph.D. and David I. Schwartz, Ph.D.</p>
         </div>,
-        imageList: []
+        imageList: [
+            {
+                image: digitalTwin1,
+                title: "Network full view"
+            },
+            {
+                image: digitalTwin2,
+                title: "Network close-up"
+            },
+            {
+                image: digitalTwin3,
+                title: "AI prompt demonstration"
+            },
+            {
+                image: digitalTwin4,
+                title: "Unity Shader Graph code for network lines"
+            },
+        ]
     },
     {title: "Direct3D 11 Renderer",
         subtitle: "C++ - Direct3D11 - HLSL",
-        thumbnail: direct3dPhoto1,
+        thumbnail: direct3dThumb,
         tags: "programming",
         content: <div>
             <p>Rendering application to display 3D models, written during two classes over the course of two semesters. Features include:</p>
@@ -119,16 +157,15 @@ export default [
         </div>,
         imageList: [
             {
-                image: direct3dPhoto3,
+                image: direct3d1,
                 title: "Foliage mesh generation parameters"
             },
-        
             {
-                image: direct3dPhoto4,
+                image: direct3d2,
                 title: "Particle emitters and shadows"
             },
             {
-                image: direct3dPhoto2,
+                image: direct3d3,
                 title: "Blue noise dithering shader"
             },
         
@@ -136,43 +173,43 @@ export default [
     },
     {title: "Super Intergalactic Audio Visualizer",
         subtitle: "HTML - TypeScript - Node.js - Bulma - Webpack",
-        thumbnail: audioVisualizerPhoto1,
+        thumbnail: audioVisualizerThumb,
         tags: "web design",
         content: <div>
             <p>Added EQ filters to web audio player application by interfacing with the WebAudio API. Used Canvas API to render a rotating field of stars, which react to the music. Designed clean, responsive, and modern page layout using the Bulma CSS framework.</p>
         </div>,
         imageList: [
             {
-                image: audioVisualizerPhoto2,
-                title: "Tablet Layout"
+                image: audioVisualizer1,
+                title: "Tablet layout"
             },
             {
-                image: audioVisualizerPhoto3,
-                title: "Mobile Layout"
+                image: audioVisualizer2,
+                title: "Mobile layout"
             },
         ]
     },
     {title: "Round & Round Trip",
         subtitle: "C# - Unity - Aseprite",
-        thumbnail: roundAndRoundTripPhoto1,
+        thumbnail: roundAndRoundTripThumb,
         tags: "programming design",
         content: <div>
             <p>A graph theory-based game about finding the most fuel-efficient route around a series of maps. Programmed and shipped the game in 96 hours for the GMTK Game Jam 2025. Rapidly prototyped systems for player movement, map logic, and puzzle solution confirmation. Added developer tools to assist with level creation and mentored teammates on their usage. Collaborated with teammates to link UI to gameplay systems while solving merge conflicts. Illustrated 40+ location icons, 4 level maps, 2 ending screens, and a player sprite.</p>
         </div>,
         imageList: [
             {
-                image: roundAndRoundTripPhoto2,
+                image: roundAndRoundTrip1,
                 title: "Level 1"
             },
             {
-                image: roundAndRoundTripPhoto3,
+                image: roundAndRoundTrip2,
                 title: "Level 3"
             },
         ]
     },
     {title: "Scratch Remix Tree Visualizer",
         subtitle: "HTML - CSS - JavaScript - AJAX",
-        thumbnail: remixVisualizerPhoto1,
+        thumbnail: remixVisualizerThumb,
         tags: "programming web",
         content: <div>
             <p>MIT’s Scratch website, and the visual coding language used to create the projects shared there, was my first introduction to the practice of programming 12 years ago. It’s very important to me, and I still use it today to share short games and animations with my friends from high school. When I was given an assignment to build a browser application that interfaces with the API of another website, I decided to use the Scratch API to create a site that would be useful to me and my friends.</p>
@@ -181,18 +218,18 @@ export default [
         </div>,
         imageList: [
             {
-                image: remixVisualizerPhoto2,
+                image: remixVisualizer1,
                 title: "Parameter tooltips"
             },
             {
-                image: remixVisualizerPhoto3,
+                image: remixVisualizer2,
                 title: "Project info on hover"
             },
         ]
     },
     {title: "Arrow Ace",
-        subtitle: "C# - Unity",
-        thumbnail: arrowAcePhoto1,
+        subtitle: "C# - Unity - GIMP",
+        thumbnail: arrowAceThumb,
         tags: "programming",
         content: <div>
             <p>This is a project I made in my Interactive Media Development class, in which we learn how to use the video game engine Unity.</p>
@@ -209,40 +246,44 @@ export default [
         </div>,
         imageList: [
             {
-                image: arrowAcePhoto2,
-                title: "Gameplay"
+                image: arrowAce1,
+                title: "Enemy types"
             },
             {
-                image: arrowAcePhoto3,
-                title: "Game Over Screen"
+                image: arrowAce2,
+                title: "Launching a stolen spear"
+            },
+            {
+                image: arrowAce3,
+                title: "Game Over screen"
             },
         ]
     },
     {title: "RIT Game Developers Club Posters",
         subtitle: "Graphic Design - Character Design - Krita",
-        thumbnail: rgdcPostersPhoto1,
+        thumbnail: rgdcPostersThumb,
         tags: "design",
         content: <div>
             <p>As Vice President of the RIT Game Developers Club, advertised club events by designing promotional posters with a consistent brand identity. Designed a mascot character, Jamster, to use in club promotional materials. Coordinated and organized weekend-long game jams each semester, including preparing slideshows and overseeing event operations.</p>
         </div>,
         imageList: [
             {
-                image: rgdcPostersPhoto2,
-                title: "Fall 2024-Spring 2025 General Club Poster"
+                image: rgdcPosters1,
+                title: "Fall 2024–Spring 2025 general club poster"
             },
             {
-                image: rgdcPostersPhoto3,
-                title: "Halloween 2024 Game Jam Poster"
+                image: rgdcPosters2,
+                title: "Halloween 2024 Game Jam poster"
             },
             {
-                image: rgdcPostersPhoto4,
-                title: "Spring 2025 Game Jam Poster"
+                image: rgdcPosters3,
+                title: "Spring 2025 Game Jam poster"
             },
         ]
     },
     {title: "Avocado Attorney",
         subtitle: "2D visual novel game with robust developer tools for scripting cinematic sequences.",
-        thumbnail: avocadoAttorneyPhoto1,
+        thumbnail: avocadoAttorneyThumb,
         tags: "programming design",
         content: <div>
             <p>A lighthearted, cartoonish courtroom visual novel game based on the Ace Attorney series, with a variety of custom systems for managing all aspects of gameplay and the user interface, including:</p>
@@ -261,11 +302,15 @@ export default [
         </div>,
         imageList: [
             {
-                image: avocadoAttorneyPhoto2,
+                image: avocadoAttorney1,
+                title: "Cross-examination interface"
+            },
+            {
+                image: avocadoAttorney2,
                 title: "Inventory interface"
             },
             {
-                image: avocadoAttorneyPhoto3,
+                image: avocadoAttorney3,
                 title: "Dialogue option interface"
             },
         ]
