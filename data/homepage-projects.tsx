@@ -23,6 +23,11 @@ import direct3d1 from "../img/projects/direct3d-11-renderer/1.jpeg";
 import direct3d2 from "../img/projects/direct3d-11-renderer/2.jpeg";
 import direct3d3 from "../img/projects/direct3d-11-renderer/3.jpeg";
 
+import hangmanThumb from "../img/projects/electronica-hangman/thumb.jpeg";
+import hangman1 from "../img/projects/electronica-hangman/1.jpeg";
+import hangman2 from "../img/projects/electronica-hangman/2.jpeg";
+import hangman3 from "../img/projects/electronica-hangman/3.jpeg";
+
 import portfolioSiteThumb from "../img/projects/portfolio-site/thumb.jpeg";
 import portfolioSite1 from "../img/projects/portfolio-site/1.jpeg";
 import portfolioSite2 from "../img/projects/portfolio-site/2.jpeg";
@@ -169,6 +174,29 @@ export default [
                 title: "Blue noise dithering shader"
             },
         
+        ]
+    },
+    {title: "Electronica Hangman",
+        subtitle: "React - JavaScript - Figma - Node.js - Vite - HTML - CSS",
+        thumbnail: hangmanThumb,
+        tags: "web",
+        content: <div>
+            <p>A version of Hangman made as part of an online React course. Each aspect of the project was first programmed independently from specifications given by the instructor, then refactored to include efficiencies and improvements I learned from the instructor's code. The webpage layout was built to recreate a design provided by the instructor through Figma.</p>
+            <p><a href="https://people.rit.edu/org7993/PersonalProjects/ElectronicaHangman" target="_blank">Click here to play.</a></p>
+        </div>,
+        imageList: [
+            {
+                image: hangman1,
+                title: "Midgame"
+            },
+            {
+                image: hangman2,
+                title: "Game Won"
+            },
+            {
+                image: hangman3,
+                title: "Game Lost"
+            },
         ]
     },
     {title: "Super Intergalactic Audio Visualizer",
