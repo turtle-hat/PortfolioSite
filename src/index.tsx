@@ -12,7 +12,7 @@ createRoot(document.getElementById("root")!).render(
     <StrictMode>
         <Header
             title="Owen Gebhardt"
-            subtitle="Creating enjoyable experiences for users, developers, and everyone in between"
+            subtitle="Creating frictionless experiences for users, developers, and everyone in between"
         />
         <Nav/>
         <main>
