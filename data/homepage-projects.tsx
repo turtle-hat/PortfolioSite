@@ -56,58 +56,6 @@ import tangrams3 from "../img/projects/tangrams/3.jpeg";
 
 
 export default [
-    {title: "Ten Grams of Tangrams",
-        subtitle: "HTML - CSS - JavaScript - PixiJS",
-        thumbnail: tangramsThumb,
-        tags: "programming web design",
-        content: <div>
-            <p>For the final project in my Intro to Game Web Technology course during Fall 2022, I needed to design and program a video game to run in a web browser. As a kid, I used to play with a set of plastic puzzle pieces called tangrams, which includes a number of specific triangles and quadrilaterals. I brainstormed off from that idea and decided on a design for a puzzle game that tasks the player with fitting a set of angular pieces snugly into a board, much like a jigsaw puzzle.</p>
-            <p>Each puzzle is created by procedurally dividing a full board into a random set of pieces, which are assigned a random color and scattered on the left to hide their original positions. Each piece is stored as a list of positions representing the filled triangles they’re made of, which is cross-referenced against a grid of occupied and unoccupied triangles in the board whenever one is placed.</p>
-            <p>I hope to continue development on this game in the future. Due to the way triangle directionality is processed, pieces can currently only be placed on tiles that allow the diagonal lines across each square to match up. I’d like to remove this restriction to make gameplay more intuitive and allow greater creativity. Additionally, playtesting revealed that the piece sizes need to be more constrained: puzzles often contain tiny triangles that can fit anywhere and large pieces that can only fit in one place, both of which are uninteresting to deal with. Finally, I’d like to improve the graphics and color choices, since they’re currently unpolished and functional “programmer art.”</p>
-            <p><a href="https://people.rit.edu/org7993/235/project3" target="_blank">Click here to play.</a></p>
-        </div>,
-        imageList: [
-            {
-                image: tangrams1,
-                title: "Starting state"
-            },
-            {
-                image: tangrams2,
-                title: "Partially filled board"
-            },
-            {
-                image: tangrams3,
-                title: "Win screen"
-            },
-        ]
-    },
-    {title: "This Site",
-        subtitle: "TypeScript - React - Node.js - Vite - HTML - CSS",
-        thumbnail: portfolioSiteThumb,
-        tags: "programming web design",
-        content: <div>
-            <p>The site you're looking at now was created in preparation for the RIT Spring 2026 Career Fair. After beginning to create the site in plain HTML and CSS during Summer 2025, I put development on hiatus to focus on applying to jobs. Seeking to broaden my skillset, I took an online class to learn React over the course of about 50 hours from October 2025 to February 2026. During February 2026, I refactored my original site to use a new React-based stack, blocking out the site into reusable components.</p>
-            <p>In its current state, the site features data-driven design to generate site content from JSON-style data stored in a separate file, a responsive layout that changes based on window size, and accessible light- and dark-mode palettes.</p>
-        </div>,
-        imageList: [
-            {
-                image: portfolioSite1,
-                title: "Tablet layout"
-            },
-            {
-                image: portfolioSite2,
-                title: "Mobile layout"
-            },
-            {
-                image: portfolioSite3,
-                title: "Hero and navbar"
-            },
-            {
-                image: portfolioSite4,
-                title: "Dark mode and picture masonry layout"
-            },
-        ]
-    },
     {title: "RIT Campus Digital Twin",
         subtitle: "Python - C# - JavaScript - AJAX - OpenAI API - ArcGIS Pro - ArcGIS Online",
         thumbnail: digitalTwinThumb,
@@ -143,6 +91,33 @@ export default [
             },
         ]
     },
+    {title: "This Site",
+        subtitle: "TypeScript - React - Node.js - Vite - HTML - CSS",
+        thumbnail: portfolioSiteThumb,
+        tags: "programming web design",
+        content: <div>
+            <p>The site you're looking at now was created in preparation for the RIT Spring 2026 Career Fair. After beginning to create the site in plain HTML and CSS during Summer 2025, I put development on hiatus to focus on applying to jobs. Seeking to broaden my skillset, I took an online class to learn React over the course of about 50 hours from October 2025 to February 2026. During February 2026, I refactored my original site to use a new React-based stack, blocking out the site into reusable components.</p>
+            <p>In its current state, the site features data-driven design to generate site content from JSON-style data stored in a separate file, a responsive layout that changes based on window size, and accessible light- and dark-mode palettes.</p>
+        </div>,
+        imageList: [
+            {
+                image: portfolioSite1,
+                title: "Tablet layout"
+            },
+            {
+                image: portfolioSite2,
+                title: "Mobile layout"
+            },
+            {
+                image: portfolioSite3,
+                title: "Hero and navbar"
+            },
+            {
+                image: portfolioSite4,
+                title: "Dark mode and picture masonry layout"
+            },
+        ]
+    },
     {title: "Direct3D 11 Renderer",
         subtitle: "C++ - Direct3D11 - HLSL",
         thumbnail: direct3dThumb,
@@ -174,6 +149,31 @@ export default [
                 title: "Blue noise dithering shader"
             },
         
+        ]
+    },
+    {title: "Ten Grams of Tangrams",
+        subtitle: "HTML - CSS - JavaScript - PixiJS",
+        thumbnail: tangramsThumb,
+        tags: "programming web design",
+        content: <div>
+            <p>For the final project in my Intro to Game Web Technology course during Fall 2022, I needed to design and program a video game to run in a web browser. As a kid, I used to play with a set of plastic puzzle pieces called tangrams, which includes a number of specific triangles and quadrilaterals. I brainstormed off from that idea and decided on a design for a puzzle game that tasks the player with fitting a set of angular pieces snugly into a board, much like a jigsaw puzzle.</p>
+            <p>Each puzzle is created by procedurally dividing a full board into a random set of pieces, which are assigned a random color and scattered on the left to hide their original positions. Each piece is stored as a list of positions representing the filled triangles they’re made of, which is cross-referenced against a grid of occupied and unoccupied triangles in the board whenever one is placed.</p>
+            <p>I hope to continue development on this game in the future. Due to the way triangle directionality is processed, pieces can currently only be placed on tiles that allow the diagonal lines across each square to match up. I’d like to remove this restriction to make gameplay more intuitive and allow greater creativity. Additionally, playtesting revealed that the piece sizes need to be more constrained: puzzles often contain tiny triangles that can fit anywhere and large pieces that can only fit in one place, both of which are uninteresting to deal with. Finally, I’d like to improve the graphics and color choices, since they’re currently unpolished and functional “programmer art.”</p>
+            <p><a href="https://people.rit.edu/org7993/235/project3" target="_blank">Click here to play.</a></p>
+        </div>,
+        imageList: [
+            {
+                image: tangrams1,
+                title: "Starting state"
+            },
+            {
+                image: tangrams2,
+                title: "Partially filled board"
+            },
+            {
+                image: tangrams3,
+                title: "Win screen"
+            },
         ]
     },
     {title: "Electronica Hangman",
