@@ -97,7 +97,7 @@ export default [
         tags: "programming web design",
         content: <div>
             <p>The site you're looking at now was created in preparation for the RIT Spring 2026 Career Fair. After beginning to create the site in plain HTML and CSS during Summer 2025, I put development on hiatus to focus on applying to jobs. Seeking to broaden my skillset, I took an online class to learn React over the course of about 50 hours from October 2025 to February 2026. During February 2026, I refactored my original site to use a new React-based stack, blocking out the site into reusable components.</p>
-            <p>In its current state, the site features data-driven design to generate site content from JSON-style data stored in a separate file, a responsive layout that changes based on window size, and accessible light- and dark-mode palettes.</p>
+            <p>In its current state, the site features data-driven design to generate site content from JSON-style data stored in a separate file, a responsive layout, and accessible light- and dark-mode palettes.</p>
         </div>,
         imageList: [
             {
@@ -179,9 +179,9 @@ export default [
     {title: "Electronica Hangman",
         subtitle: "React - JavaScript - Figma - Node.js - Vite - HTML - CSS",
         thumbnail: hangmanThumb,
-        tags: "web",
+        tags: "web design",
         content: <div>
-            <p>A version of Hangman made as part of an online React course. Each aspect of the project was first programmed independently from specifications given by the instructor, then refactored to include efficiencies and improvements I learned from the instructor's code. The webpage layout was built to recreate a design provided by the instructor through Figma.</p>
+            <p>A version of Hangman made as part of an online React course. Each aspect of the project was first programmed independently from specifications given by the instructor, then refactored to include efficiencies and improvements I learned from the instructor's code. The webpage uses managed and derived state to render the game's position, and the layout was built to design specifications provided by the instructor through Figma.</p>
             <p><a href="https://people.rit.edu/org7993/PersonalProjects/ElectronicaHangman" target="_blank">Click here to play.</a></p>
         </div>,
         imageList: [
