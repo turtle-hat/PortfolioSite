@@ -6,15 +6,18 @@ import Nav from "./components/Nav";
 import Footer from "./components/Footer";
 import ProjectList from "./components/ProjectList";
 
-import homepageProjects from "../data/homepage-projects"
+import homepageProjects from "../data/homepage-projects";
 
 createRoot(document.getElementById("root")!).render(
     <StrictMode>
         <Header
-            title="Design"
+            title="Owen Gebhardt"
+            subtitle='UI/UX design, CSS, graphic design, and illustration'
             variant="design"
         />
-        <Nav/>
+        <Nav
+            pageName="design"
+        />
         <main>
             <ProjectList
                 data={homepageProjects}

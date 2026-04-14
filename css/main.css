@@ -43,6 +43,7 @@ main {
 footer {
   padding: 2rem 0;
 
+  font-size: 16pt;
   text-align: center;
 
   color: var(--text-dark);
@@ -63,53 +64,67 @@ main>p {
 .site-nav {
   display: flex;
   justify-content: center;
+  align-items: center;
 
   margin: 0px 0px 2em;
   padding: 2rem 0;
+  height: 100px;
 
   background-color: light-dark(var(--background-lighter), var(--background-darker));
 }
 
-.site-nav a {
+.site-nav > * {
   padding: 1rem 2rem;
   border-width: 5px 0px 5px 0px;
   border-style: solid;
-
-  transform: skewX(16deg);
   
   text-decoration: none;
   font-size: 2em;
 
+  transform: skewX(16deg);
+
   color: light-dark(var(--text-light), var(--text-dark));
   background-color: light-dark(var(--background-lighter), var(--background-darker));
-  transition: color 100ms ease, background-color 100ms ease;
+  transition:
+    color 100ms ease,
+    background-color 100ms ease,
+    padding 100ms ease
+  ;
 }
 
-.site-nav a p {
+.site-nav p {
   margin: 0px;
+  color: inherit;
 
   transform: skewX(-16deg);
 }
-
-.site-nav a:hover, .site-nav a:focus {
-  background-color: none;
-}
-.site-nav a:hover p, .site-nav a:focus p {
+.site-nav>div>p {
   color: var(--text-dark);
 }
 
-.site-nav a:focus {
-  outline-width: 5px;
-  outline-style: solid;
+.site-nav a:hover p,
+.site-nav a:focus p {
+  color: var(--text-dark);
+}
+
+.site-nav>a:hover,
+.site-nav>a:focus {
+  padding: 2rem;
   z-index: 1;
 }
 
-a.nav-home p {
+.site-nav>a:focus {
+  outline-width: 5px;
+  outline-style: solid;
+  z-index: 2;
+}
+
+.nav-home p {
   font-weight: bold;
 }
 
-a.nav-home { border-color: light-dark(var(--accent-home-dark), var(--accent-home-light)); }
-a.nav-home p { color: light-dark(var(--accent-home-dark), var(--accent-home-light)); }
+/* .nav-home { border-color: light-dark(var(--accent-home-dark), var(--accent-home-light)); }
+.nav-home p { color: light-dark(var(--accent-home-dark), var(--accent-home-light)); }
 a.nav-home:hover,
 a.nav-home:focus {
   background-color: var(--accent-home-dark);
@@ -117,8 +132,8 @@ a.nav-home:focus {
   outline-color: var(--accent-home);
 }
 
-a.nav-programming { border-color: light-dark(var(--accent-programming-dark), var(--accent-programming-light)); }
-a.nav-programming p { color: light-dark(var(--accent-programming-dark), var(--accent-programming-light)); }
+.nav-programming { border-color: light-dark(var(--accent-programming-dark), var(--accent-programming-light)); }
+.nav-programming p { color: light-dark(var(--accent-programming-dark), var(--accent-programming-light)); }
 a.nav-programming:hover,
 a.nav-programming:focus {
   background-color: var(--accent-programming-dark);
@@ -126,8 +141,8 @@ a.nav-programming:focus {
   outline-color: var(--accent-programming);
 }
 
-a.nav-web { border-color: light-dark(var(--accent-web-dark), var(--accent-web-light)); }
-a.nav-web p { color: light-dark(var(--accent-web-dark), var(--accent-web-light)); }
+.nav-web { border-color: light-dark(var(--accent-web-dark), var(--accent-web-light)); }
+.nav-web p { color: light-dark(var(--accent-web-dark), var(--accent-web-light)); }
 a.nav-web:hover,
 a.nav-web:focus {
   background-color: var(--accent-web-dark);
@@ -135,38 +150,49 @@ a.nav-web:focus {
   outline-color: var(--accent-web);
 }
 
-a.nav-design { border-color: light-dark(var(--accent-design-dark), var(--accent-design-light)); }
-a.nav-design p { color: light-dark(var(--accent-design-dark), var(--accent-design-light)); }
+.nav-design { border-color: light-dark(var(--accent-design-dark), var(--accent-design-light)); }
+.nav-design p { color: light-dark(var(--accent-design-dark), var(--accent-design-light)); }
 a.nav-design:hover,
 a.nav-design:focus {
   background-color: var(--accent-design-dark);
   border-color: var(--accent-design);
   outline-color: var(--accent-design);
-}
+} */
 
 @media (max-width: 1080px) {
-  .site-nav a {
-    padding: 1rem;
+  .site-nav>a {
+    padding: 1rem 1.5rem;
+  }
+
+  .site-nav>a:hover,
+  .site-nav>a:focus {
+    padding: 1.5rem;
   }
 }
 
 @media (max-width: 640px) {
   .site-nav {
     flex-direction: column;
+    align-items: stretch;
 
+    height: auto;
     margin: 0px;
   }
-
-  .site-nav a {
+  
+  .site-nav>a,
+  .site-nav a:hover,
+  .site-nav a:focus,
+  .site-nav>* {
     padding: 10px;
     border-width: 0 0.5em;
 
     transform: skewX(0deg);
   }
 
-  .site-nav a p {
+  .site-nav>* p {
     transform: skewX(0deg);
   }
+
 }
 
 .hero {
@@ -406,6 +432,7 @@ a.nav-design:focus {
 
   max-width: 100%;
   max-height: 50vh;
+  border-radius: 5px;
 
   box-shadow: 0 5px 10px light-dark(var(--background-light), var(--background-darker));
 }

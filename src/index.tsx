@@ -6,7 +6,7 @@ import Nav from "./components/Nav";
 import Footer from "./components/Footer";
 import ProjectList from "./components/ProjectList";
 
-import homepageProjects from "../data/homepage-projects"
+import homepageProjects from "../data/homepage-projects";
 
 createRoot(document.getElementById("root")!).render(
     <StrictMode>
@@ -14,7 +14,9 @@ createRoot(document.getElementById("root")!).render(
             title="Owen Gebhardt"
             subtitle="Creating frictionless experiences for users, developers, and everyone in between"
         />
-        <Nav/>
+        <Nav
+            pageName={"home"}
+        />
         <main>
             <ProjectList
                 data={homepageProjects}

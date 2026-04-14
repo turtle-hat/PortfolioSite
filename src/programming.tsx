@@ -11,10 +11,13 @@ import homepageProjects from "../data/homepage-projects"
 createRoot(document.getElementById("root")!).render(
     <StrictMode>
         <Header
-            title="Programming"
+            title="Owen Gebhardt"
+            subtitle='2D and 3D applications with meticulous and robust systems design'
             variant="programming"
         />
-        <Nav/>
+        <Nav
+            pageName='programming'
+        />
         <main>
             <ProjectList
                 data={homepageProjects}
