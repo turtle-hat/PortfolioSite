@@ -25,9 +25,20 @@ html {
   --accent-web-light:         #a5dd7a;
   --accent-design-light:      #eebf73;
 
+  --project-padding: 2.5rem;
+  --project-gap: 1.25em;
+
   background-color: light-dark(var(--background-light), var(--background-darker));
   
   color-scheme: light dark;
+
+  font-size: 16pt;
+}
+
+@media (max-width: 400px) {
+  html {
+    font-size: 12pt;
+  }
 }
 
 body {
@@ -41,9 +52,7 @@ main {
 }
 
 footer {
-  padding: 2rem 0;
-
-  font-size: 16pt;
+  padding: 2em 0;
   text-align: center;
 
   color: var(--text-dark);
@@ -57,8 +66,6 @@ footer.design      { background-image: linear-gradient(to bottom right, var(--ac
 main>p {
   width: 80%;
   margin: auto;
-
-  font-size: 16pt;
 }
 
 .site-nav {
@@ -67,19 +74,20 @@ main>p {
   align-items: center;
 
   margin: 0px 0px 2em;
-  padding: 2rem 0;
+  padding: 1.5em 0;
   height: 100px;
+
+  font-size: 1.5em;
 
   background-color: light-dark(var(--background-lighter), var(--background-darker));
 }
 
-.site-nav > * {
-  padding: 1rem 2rem;
-  border-width: 5px 0px 5px 0px;
+.site-nav>* {
+  padding: 0.5em 1em;
+  border-width: 5px 0px;
   border-style: solid;
   
   text-decoration: none;
-  font-size: 2em;
 
   transform: skewX(16deg);
 
@@ -111,7 +119,7 @@ main>p {
 
 .site-nav>a:hover,
 .site-nav>a:focus {
-  padding: 2rem;
+  padding-block: 0.75em;
   z-index: 1;
 }
 
@@ -163,12 +171,7 @@ a.nav-design:focus {
 
 @media (max-width: 1080px) {
   .site-nav>a {
-    padding: 1rem 1.5rem;
-  }
-
-  .site-nav>a:hover,
-  .site-nav>a:focus {
-    padding: 1.5rem;
+    padding: 0.5em 0.75em;
   }
 }
 
@@ -182,8 +185,8 @@ a.nav-design:focus {
   }
   
   .site-nav>a,
-  .site-nav a:hover,
-  .site-nav a:focus,
+  .site-nav>a:hover,
+  .site-nav>a:focus,
   .site-nav>* {
     padding: 10px;
     border-width: 0 0.5em;
@@ -193,11 +196,6 @@ a.nav-design:focus {
 
   .site-nav>* p {
     transform: skewX(0deg);
-  }
-}
-@media (max-width: 360px) {
-  .site-nav * {
-    font-size: 1.5rem;
   }
 }
 
@@ -212,8 +210,9 @@ a.nav-design:focus {
 .hero.design      { background-image: linear-gradient(to top right, var(--accent-design), var(--accent-design-dark)); }
 
 .hero-text {
-  margin: 0 calc(10vw + 3em);
-  max-width: 80vw;
+  margin: 0 calc(10% + var(--project-padding));
+  width: max-content;
+  max-width: calc(80% - var(--project-padding) * 2);
   text-align: left;
 
   color: var(--text-dark);
@@ -224,7 +223,7 @@ a.nav-design:focus {
   padding-bottom: 10px;
   border-bottom: 5px var(--text-dark) solid;
   
-  font-size: 5em;
+  font-size: 4em;
   font-weight: 300;
 }
 
@@ -233,9 +232,9 @@ a.nav-design:focus {
 }
 
 .hero-text h2 {
-  margin-top: 20px;
+  margin-top: 1em;
 
-  font-size: 2em;
+  font-size: 1.5em;
   font-weight: 300;
 }
 
@@ -249,10 +248,11 @@ a.nav-design:focus {
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 900px) {
   .hero-text {
     text-align: center;
     width: min-content;
+    max-width: none;
     margin: 0px auto 0px auto;
   }
 
@@ -261,13 +261,13 @@ a.nav-design:focus {
   }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 400px) {
   .hero-text h1 {
     font-size: 2.5em;
   }
 
   .hero-text h2 {
-    font-size: 1.5em;
+    font-size: 1.25em;
   }
 }
 
@@ -367,7 +367,7 @@ a.nav-design:focus {
 
 .gallery-item:focus-within {
   z-index: 1;
-  outline-width: 0.5rem;
+  outline-width: 0.5em;
   outline-style: solid;
 }
 
@@ -414,11 +414,11 @@ a.nav-design:focus {
     1fr 1fr
   ;
   align-items: center;
-  gap: 3em;
+  gap: var(--project-gap);
 
   width: 80%;
-  margin: 2em auto;
-  padding: 3em;
+  margin: 2rem auto;
+  padding: var(--project-padding);
   border-radius: 10px;
   box-sizing: border-box;
 
@@ -428,7 +428,7 @@ a.nav-design:focus {
 .project>.title {
   grid-area: title;
 
-  font-size: 4em;
+  font-size: 3em;
   margin: auto 0 0;
 
   justify-self: left;
@@ -436,6 +436,7 @@ a.nav-design:focus {
 
 .project>.subtitle {
   grid-area: subtitle;
+  font-size: 1.25em;
 
   margin: 0 0 auto;
 }
@@ -453,15 +454,20 @@ a.nav-design:focus {
 
 .project>.content {
   grid-area: content;
-  font-size: 16pt;
-  line-height: 24pt;
+  line-height: 1.5em;
+  margin-top: calc(var(--project-padding) - var(--project-gap));
 }
 
 .project p, .project ul {
-  margin: 1.5em 0;
+  margin: 0 0 var(--project-gap);
 }
 
 @media (max-width: 1080px) {
+  html {
+    --project-padding: 1.5rem;
+    --project-gap: 0.75em;
+  }
+
   .project {
     grid-template: 
       "title    thumbnail"
@@ -469,22 +475,18 @@ a.nav-design:focus {
       "content  content" /
       1fr 1fr
     ;
-    gap: 2em;
 
     padding: 2em;
   }
 
   .project>.title {
     grid-area: title;
-
     margin: auto;
-    font-size: 4em;
-
     justify-self: left;
   }
 }
 
-@media (max-width: 720px) {
+@media (max-width: 900px) {
   .project {
     grid-template: 
       "title"
@@ -493,7 +495,6 @@ a.nav-design:focus {
       "content" /
       1fr
     ;
-
     width: auto;
     margin: 1.6%;
   }
@@ -501,10 +502,12 @@ a.nav-design:focus {
   .project>.title {
     justify-self: center;
     text-align: center;
+    font-size: 2.5em;
   }
 
   .project>.subtitle {
     text-align: center;
+    font-size: 1.25em;
   }
 
   .project>.thumbnail {
@@ -512,12 +515,19 @@ a.nav-design:focus {
   }
 }
 
+@media (max-width: 360px) {
+  .project {
+    margin-inline: 0px;
+    padding-inline: 5px;
+  }
+}
+
 .image-list {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  gap: 1.5em;
-  margin-top: 4em;
+  gap: var(--project-gap);
+  margin-top: var(--project-padding);
 }
 
 .image-list-item {
@@ -535,8 +545,6 @@ a.nav-design:focus {
   text-align: center;
 
   margin: 0;
-
-  font-size: 16pt;
 }
 
 @media (max-width: 1280px) {
@@ -549,7 +557,7 @@ a.nav-design:focus {
   .image-list {
     display: block;
     column-count: 2;
-    column-gap: 2em;
+    margin: 0;
   }
   
   .image-list-item {
@@ -562,7 +570,7 @@ a.nav-design:focus {
   .image-list-item img {
     height: auto;
     width: 100%;
-    margin: 2em 0 0;
+    margin: var(--project-padding) 0 0;
   }
 
   .image-list-item:nth-child(2n) {
@@ -570,7 +578,7 @@ a.nav-design:focus {
   }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 720px) {
   .image-list {
     column-count: 1;
   }
@@ -585,3 +593,10 @@ a.nav-design:focus {
     margin: 2em 0 0;
   }
 }
+
+@media (max-width: 360px) {
+  .image-list-item {
+    max-width: 100vw;
+  }
+}
+
