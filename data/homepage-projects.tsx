@@ -309,24 +309,24 @@ export default [
             },
         ]
     },
-    {title: "Avocado Attorney",
-        subtitle: "2D visual novel game with robust developer tools for scripting cinematic sequences.",
+    {title: "Visual Novel Game Engine",
+        subtitle: "Robust developer tools for scripting cinematic sequences in a 2D visual novel game.",
         thumbnail: avocadoAttorneyThumb,
         tags: "programming design",
         content: <div>
-            <p>A lighthearted, cartoonish courtroom visual novel game based on the Ace Attorney series, with a variety of custom systems for managing all aspects of gameplay and the user interface, including:</p>
+            <p>A custom engine for a visual novel based on the Ace Attorney series, with a network of custom systems and tools for managing all aspects of gameplay and the user interface. I built and integrated many of these systems from the ground up, including:</p>
             <ul>
-                <li>2D character animations.</li>
+                <li>Nonlinear scene flow authored with linear code.</li>
                 <li>Input polling with keyboard and touchscreen support.</li>
-                <li>Text display with format markup, soft wrapping, and inline commands for signalling cinematic events.</li>
+                <li>Text display with format markup (size, tracking, leading, color, etc.), soft wrapping, and inline commands for initiating cinematic events.</li>
                 <li>Vertically layered soundtrack coordination.</li>
-                <li>User interface with animations.</li>
-                <li>Visual effects.</li>
-                <li>2D camera motions.</li>
-                <li>Nonlinear scene flow control.</li>
+                <li>Unified visual effect system.</li>
+                <li>2D character animations.</li>
+                <li>2D camera motions with parallax.</li>
+                <li>User interface animations to add emphasis and appeal without sacrificing legibility.</li>
             </ul>
-            <p>Development has been ongoing since 2022, when free time allows. Currently, I am in the process of illustrating final art assets, including backgrounds, character animations, and interface elements. I have also hired a composer to write the game's original soundtrack and regularly coordinate with him to ensure it fits the desired tone for various story beats.</p>
-            <p>Avocado Attorney is an open source project programmed in the block-based programming language Scratch using the TurboWarp IDE, with well-documented code systems designed to allow non-programmers to engage in communal storytelling by scripting their own game sequences in my custom engine and sharing their creations online.</p>
+            <p>Development has been ongoing since 2022 when free time allows. Currently, I am in the process of writing the game's plot and illustrating final art assets, including backgrounds, character animations, and visual effects. I have also hired a composer to write the game's original soundtrack, and I regularly coordinate with him to ensure each song fits the desired tone for the scenes it accompanies.</p>
+            <p>Avocado Attorney is an open source project, programmed in the block-based programming language Scratch using the TurboWarp IDE. The Scratch Foundation offers an open-source project hosting service that allows other users to view the code of hosted projects and create forked versions with their own changes. One of my primary goals for this game is to include simple, modular, and well-documented low-code designer tools in the codebase, allowing non-programmers to engage in communal storytelling by scripting their own game sequences and sharing their stories online.</p>
         </div>,
         imageList: [
             {
