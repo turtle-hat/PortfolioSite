@@ -199,12 +199,13 @@ export default [
             },
         ]
     },
-    {title: "Super Intergalactic Audio Visualizer",
-        subtitle: "HTML - TypeScript - Node.js - Bulma - Webpack",
+    {title: "Audio Visualizer",
+        subtitle: "HTML - TypeScript - Node.js - Canvas API - Bulma - Webpack",
         thumbnail: audioVisualizerThumb,
         tags: "web design",
         content: <div>
-            <p>Added EQ filters to web audio player application by interfacing with the WebAudio API. Used Canvas API to render a rotating field of stars, which react to the music. Designed clean, responsive, and modern page layout using the Bulma CSS framework.</p>
+            <p>Added EQ filters to web audio player application by interfacing with the WebAudio API. Used Canvas API to render a rotating field of stars, which each react to a different frequency. Designed clean, responsive, and modern page layout using the Bulma CSS framework.</p>
+            <p><a href="https://people.rit.edu/org7993/PersonalProjects/AudioVisualizer" target="_blank">Click here to use it.</a></p>
         </div>,
         imageList: [
             {
