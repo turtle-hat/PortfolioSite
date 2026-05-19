@@ -218,7 +218,7 @@ export default [
             },
         ]
     },
-    {title: "Round & Round Trip",
+    {title: "Round and Round Trip",
         subtitle: "C# - Unity - Aseprite",
         thumbnail: roundAndRoundTripThumb,
         tags: "programming design",
